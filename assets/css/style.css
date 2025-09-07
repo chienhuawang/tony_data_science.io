@@ -1,0 +1,26 @@
+/* Enable smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Styles for the navigation buttons */
+.nav-buttons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.nav-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #333; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes the underline */
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.nav-buttons a:hover {
+    background-color: #555; /* Darker color on hover */
+}

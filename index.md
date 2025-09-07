@@ -2,7 +2,7 @@
   <tr>
     <td style="vertical-align: top; padding-right: 20px;">
       <h1 style="margin-top: 0; margin-bottom: 5px;">Chien-Hua Wang | Data Scientist</h1>
-      <p style="margin-top: 0; margin-bottom: 0;">[LinkedIn](https://www.linkedin.com/in/chien-hua-wang-052450142/) | <twang.jobs@gmail.com> | Seattle, WA</p>
+      <p style="margin-top: 0; margin-bottom: 0;"><a href="https://www.linkedin.com/in/chien-hua-wang-052450142/">LinkedIn</a> | <twang.jobs@gmail.com> | Seattle, WA</p>
     </td>
     <td style="width: 120px; vertical-align: top; text-align: right;">
       <img src="images/tony_icon.png" alt="Chien-Hua Wang" style="width: 120px; border-radius: 50%;">
@@ -10,16 +10,24 @@
   </tr>
 </table>
 
+<div class="nav-buttons">
+    <a href="#about">ABOUT</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#experience">EXPERIENCE</a>
+    <a href="#education">EDUCATION</a>
+    <a href="#blog">BLOG</a>
+</div>
 
 ---
 
-### About Me
+<h3 id="about">About Me</h3>
 
 Data Scientist with over five years of experience, specializing in transforming complex data into actionable insights that drive business impact. My expertise spans Python, machine learning, large language model fine-tuning, and data visualization, complemented by hands-on experience with Microsoft Azure, Amazon AWS and product analytics through A/B testing. I am passionate about leveraging cutting-edge techniques to optimize decision-making and thrive on solving real-world challenges with innovative solutions.
 
 ---
 
-### Featured Projects
+<h3 id="projects">Featured Projects</h3>
 
 #### 1. LLM for Multi-Hop Question Answering on Knowledge Graphs
 * **Context**: Industrial level training with Coursera and Microsoft, addressing the challenge of existing LLMs struggling with multi-hop question answering grounded in structured knowledge graphs, especially in Chinese-language contexts.
@@ -61,7 +69,7 @@ Data Scientist with over five years of experience, specializing in transforming 
 
 ---
 
-### Technical Skills
+<h3 id="skills">Technical Skills</h3>
 
 * **Programming & Scripting**: Python, PySpark, R, SQL
 * **Data Engineering & ETL**: Azure Databricks, ETL, SQL, Web Scraping (Transformers, SpaCy Requests), URLlib
@@ -73,7 +81,7 @@ Data Scientist with over five years of experience, specializing in transforming 
 
 ---
 
-### Professional Experience
+<h3 id="experience">Professional Experience</h3>
 
 * **Data Scientist** | Starbucks (_December 2021 - February 2025_)
 * **Senior Associate Data Scientist** | Amgen (_June 2020 - December 2021_)
@@ -81,7 +89,7 @@ Data Scientist with over five years of experience, specializing in transforming 
 
 ---
 
-### Education & Certifications
+<h3 id="education">Education & Certifications</h3>
 
 * **Master of Industrial Engineering**
     * Texas A&M University, College Station, Texas
@@ -95,7 +103,7 @@ Data Scientist with over five years of experience, specializing in transforming 
 
 ---
 
-### Blog Posts
+<h3 id="blog">Blog Posts</h3>
 
 * [From Research to Application: Achieving a 2.1% Cost Optimization for Data Centers via Deep Reinforcement learning](https://www.linkedin.com/pulse/from-research-application-achieving-21-cost-data-centers-wang-ogr5c) - 2025-07-14
 

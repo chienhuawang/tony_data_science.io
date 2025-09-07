@@ -1,0 +1,12 @@
+# _config.yml
+
+# 設置網站主題 (這裡我們用預設的 minima 主題作為基礎)
+theme: minima
+
+# 全局設定
+defaults:
+  -
+    scope:
+      path: "" # 作用於整個儲存庫
+    values:
+      layout: "default" # 為所有頁面預設使用 default 佈局

@@ -8,37 +8,56 @@ html {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 40px;
+    /* 為了確保按鈕在一行，我們需要讓容器足夠寬或者讓按鈕本身自動換行。
+       如果按鈕文字不多，通常它們會自動在一行。
+       如果按鈕文字很長，可能需要考慮響應式設計或減少按鈕數量。
+       目前我們主要確保間距和按鈕屬性不強制換行。*/
+    display: flex; /* 使用 Flexbox 布局 */
+    flex-wrap: nowrap; /* 強制不換行，即使空間不足也會超出容器 */
+    justify-content: center; /* 水平居中按鈕 */
+    gap: 15px; /* 按鈕之間的間隔，替代 margin */
+    /* 設置一個最大寬度，避免在超寬螢幕上按鈕間距過大 */
+    max-width: 1000px; /* 您可以根據需要調整這個值 */
+    margin-left: auto; /* 配合 max-width 讓整個按鈕容器居中 */
+    margin-right: auto;
+    overflow-x: auto; /* 如果按鈕太多超出屏幕，允許水平滾動 */
+    padding-bottom: 5px; /* 防止滾動條遮擋陰影 */
 }
 
 /* Styles for individual navigation buttons */
 .nav-buttons a {
-    display: inline-block;
+    display: inline-block; /* 保持 inline-block 特性，或可以改為 flex item */
     padding: 10px 25px;
-    margin: 0 12px;
-    background-color: #4CAF50; /* Button background color */
-    color: white; /* Text color */
-    text-decoration: none; /* Removes the underline */
+    /* 移除單個按鈕的左右 margin，由父容器的 gap 統一控制 */
+    /* margin: 0 12px; */
+    
+    /* 按鈕背景色：接近白色 */
+    background-color: #f0f0f0; /* 淺灰色，比純白更柔和，您可以嘗試 #ffffff 純白色 */
+    color: #333; /* 文字顏色：深灰色以保持可讀性 */
+    
+    text-decoration: none;
     border-radius: 8px;
     transition: all 0.3s ease;
     font-weight: bold;
     letter-spacing: 1px;
+    white-space: nowrap; /* 確保按鈕文字不換行 */
 
     /* 立體感和陰影效果 */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-                0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), /* 輕微的向下陰影 */
+                0 6px 12px 0 rgba(0, 0, 0, 0.08); /* 更明顯的立體陰影 */
 }
 
 /* Hover (鼠標懸停) 效果 */
 .nav-buttons a:hover {
-    background-color: #45a049;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3),
-                0 12px 40px 0 rgba(0,0,0,0.25);
-    transform: translateY(-2px);
+    background-color: #e0e0e0; /* 懸停時背景色變深一點點 */
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.15), /* 懸停時陰影更明顯 */
+                0 9px 20px 0 rgba(0,0,0,0.12);
+    transform: translateY(-2px); /* 輕微上浮效果，增加互動感 */
 }
 
 /* Active (點擊時) 效果 */
 .nav-buttons a:active {
-    background-color: #3e8e41;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
-    transform: translateY(0);
+    background-color: #d0d0d0; /* 點擊時背景色再變深 */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08); /* 點擊時陰影變小，模擬按壓感 */
+    transform: translateY(0); /* 回歸原位 */
 }

@@ -1,29 +1,6 @@
-<style>
-/* This is the embedded CSS for the navigation buttons and smooth scroll effect */
-.nav-buttons {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-.nav-buttons a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 0 10px;
-    background-color: #333; /* Button background color */
-    color: white; /* Text color */
-    text-decoration: none; /* Removes the underline */
-    border-radius: 5px;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
-}
-.nav-buttons a:hover {
-    background-color: #555; /* Darker color on hover */
-}
-/* This single line enables smooth scrolling for the whole page */
-html {
-  scroll-behavior: smooth;
-}
-</style>
-
+---
+layout: default
+---
 <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
   <tr>
     <td style="vertical-align: top; padding-right: 20px;">
@@ -47,16 +24,13 @@ html {
 
 ---
 
-<div id="about" markdown="1">
-### About Me
+<h3 id="about">About Me</h3>
 
 Data Scientist with over five years of experience, specializing in transforming complex data into actionable insights that drive business impact. My expertise spans Python, machine learning, large language model fine-tuning, and data visualization, complemented by hands-on experience with Microsoft Azure, Amazon AWS and product analytics through A/B testing. I am passionate about leveraging cutting-edge techniques to optimize decision-making and thrive on solving real-world challenges with innovative solutions.
-</div>
 
 ---
 
-<div id="projects" markdown="1">
-### Featured Projects
+<h3 id="projects">Featured Projects</h3>
 
 #### 1. LLM for Multi-Hop Question Answering on Knowledge Graphs
 * **Context**: Industrial level training with Coursera and Microsoft, addressing the challenge of existing LLMs struggling with multi-hop question answering grounded in structured knowledge graphs, especially in Chinese-language contexts.
@@ -95,12 +69,10 @@ Data Scientist with over five years of experience, specializing in transforming 
     * **Achieved a classification accuracy of around 98%**.
     * **Reduced labor costs and optimized diagnosis processes by 10%-15%**.
 * **Tech Stack**: `Unsupervised Learning`, `Gaussian Mixture Model`, `PCA`, `Tree-based Models`
-</div>
 
 ---
 
-<div id="skills" markdown="1">
-### Technical Skills
+<h3 id="skills">Technical Skills</h3>
 
 * **Programming & Scripting**: Python, PySpark, R, SQL
 * **Data Engineering & ETL**: Azure Databricks, ETL, SQL, Web Scraping (Transformers, SpaCy Requests), URLlib
@@ -109,22 +81,18 @@ Data Scientist with over five years of experience, specializing in transforming 
 * **Large Language Modeling**: LLM, LLM-Fine Tuning, Knowledge Graph, GraphRAG, Transformer, TensorFlow/TensorFlow Hub, PyTorch, Google-BERT, NLP
 * **Data Visualization**: Power BI, Tableau, Plotly, Plotly Dash, R Shiny
 * **Project Management & CI/CD**: Project Management, Project Scheduling, GitHub, GitLab, Azure Data Factory, Docker
-</div>
 
 ---
 
-<div id="experience" markdown="1">
-### Professional Experience
+<h3 id="experience">Professional Experience</h3>
 
 * **Data Scientist** | Starbucks (_December 2021 - February 2025_)
 * **Senior Associate Data Scientist** | Amgen (_June 2020 - December 2021_)
 * **Visualization Engineer** | Amgen (_August 2019 - May 2020_)
-</div>
 
 ---
 
-<div id="education" markdown="1">
-### Education & Certifications
+<h3 id="education">Education & Certifications</h3>
 
 * **Master of Industrial Engineering**
     * Texas A&M University, College Station, Texas
@@ -135,14 +103,11 @@ Data Scientist with over five years of experience, specializing in transforming 
     * Microsoft Azure AI and ML Engineering Certificate
     * Data Science Certificate issued by John Hopkins University
     * Google Data Analytics Certificate
-</div>
 
 ---
 
-<div id="blog" markdown="1">
-### Blog Posts
+<h3 id="blog">Blog Posts</h3>
 
 * [From Research to Application: Achieving a 2.1% Cost Optimization for Data Centers via Deep Reinforcement learning](https://www.linkedin.com/pulse/from-research-application-achieving-21-cost-data-centers-wang-ogr5c) - 2025-07-14
 
 * [How Bayesian Modeling Proved a Personalized Portfolio Decisively Outperforms a Universal Strategy](https://www.linkedin.com/pulse/how-bayesian-modeling-proved-personalized-portfolio-decisively-wang-4awaf) - 2025-07-21
-</div>

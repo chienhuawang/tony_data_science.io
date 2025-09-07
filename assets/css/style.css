@@ -265,3 +265,49 @@ body {
         grid-template-columns: repeat(2, 1fr); /* 兩欄佈局 */
     }
 }
+
+/* ===== ABOUT ME - REFINED INTERACTIVE GLOW & PUSH STYLE ===== */
+
+/* 1. 關鍵字通用基礎設定 */
+.interactive-text .highlight {
+    padding: 2px 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    /* 設定流暢的動畫效果，針對 transform 和 box-shadow */
+    transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+                box-shadow 0.3s ease-in-out;
+}
+
+/* 2. 「技能資歷」關鍵字的預設光暈 (藍色) */
+.interactive-text .highlight.skill {
+    background-color: rgba(0, 123, 255, 0.08); /* 非常淡的藍色背景 */
+    color: #004085;
+    /* 預設的、較為收斂的藍色光暈 */
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); 
+}
+
+/* 3. 「商業洞察」關鍵字的預設光暈 (綠色) */
+.interactive-text .highlight.impact {
+    background-color: rgba(40, 167, 69, 0.08); /* 非常淡的綠色背景 */
+    color: #155724;
+    /* 預設的、較為收斂的綠色光暈 */
+    box-shadow: 0 0 8px rgba(40, 167, 69, 0.2);
+}
+
+/* 4. 滑鼠懸停時的「向外突出」效果 */
+.interactive-text .highlight:hover {
+    /* 放大 5% 並向上移動 2px 來創造立體感 */
+    transform: scale(1.05) translateY(-2px);
+}
+
+/* 5. 滑鼠懸停時，光暈變得更強烈以提供回饋 */
+.interactive-text .highlight.skill:hover {
+    /* 更明顯的藍色光暈 */
+    box-shadow: 0 0 12px rgba(0, 123, 255, 0.5); 
+}
+
+.interactive-text .highlight.impact:hover {
+    /* 更明顯的綠色光暈 */
+    box-shadow: 0 0 12px rgba(40, 167, 69, 0.5);
+}

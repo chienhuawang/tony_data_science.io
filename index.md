@@ -1,3 +1,5 @@
+<img src="images/tony_icon.png" alt="Chien-Hua Wang" style="position: absolute; top: 30px; right: 30px; width: 120px; border-radius: 50%;">
+
 # Chien-Hua Wang | Data Scientist
 
 [LinkedIn](https://www.linkedin.com/in/chien-hua-wang-052450142/) | <twang.jobs@gmail.com> | Seattle, WA
@@ -28,7 +30,7 @@ Data Scientist with over five years of experience, specializing in transforming 
 * **Results**:
     * **Increased the overall promotion participation rate by around 20%**.
     * **Increased the conversion rate by around 12%**.
-* **Tech Stack**: `$A/B$ Testing`, `Statistical Validation`, `Chi-square Test`, `Bayesian Methods`, `Python`
+* **Tech Stack**: `A/B Testing`, `Statistical Validation`, `Chi-square Test`, `Bayesian Methods`, `Python`
 
 #### 3. Customer Demand Forecast and Intelligent Recommendation (Starbucks)
 * **Context**: Developed an internal core driver to simulate store demand, optimizing labor costs while maximizing profits.

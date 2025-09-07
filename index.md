@@ -1,5 +1,7 @@
 ---
+
 layout: default
+
 ---
 <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
   <tr>

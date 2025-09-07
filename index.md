@@ -1,34 +1,8 @@
-<style>
-/* This is the embedded CSS for the navigation buttons and smooth scroll effect */
-.nav-buttons {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-.nav-buttons a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 0 10px;
-    background-color: #333; /* Button background color */
-    color: white; /* Text color */
-    text-decoration: none; /* Removes the underline */
-    border-radius: 5px;
-    transition: background-color 0.3s ease; /* Smooth transition effect */
-}
-.nav-buttons a:hover {
-    background-color: #555; /* Darker color on hover */
-}
-/* This single line enables smooth scrolling for the whole page */
-html {
-  scroll-behavior: smooth;
-}
-</style>
-
 <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
   <tr>
     <td style="vertical-align: top; padding-right: 20px;">
       <h1 style="margin-top: 0; margin-bottom: 5px;">Chien-Hua Wang | Data Scientist</h1>
-      <p style="margin-top: 0; margin-bottom: 0;"><a href="https://www.linkedin.com/in/chien-hua-wang-052450142/">LinkedIn</a> | <twang.jobs@gmail.com> | Seattle, WA</p>
+      <p style="margin-top: 0; margin-bottom: 0;">[LinkedIn](https://www.linkedin.com/in/chien-hua-wang-052450142/) | <twang.jobs@gmail.com> | Seattle, WA</p>
     </td>
     <td style="width: 120px; vertical-align: top; text-align: right;">
       <img src="images/tony_icon.png" alt="Chien-Hua Wang" style="width: 120px; border-radius: 50%;">
@@ -36,26 +10,15 @@ html {
   </tr>
 </table>
 
-<div class="nav-buttons">
-    <a href="#about">ABOUT</a>
-    <a href="#projects">PROJECTS</a>
-    <a href="#skills">SKILLS</a>
-    <a href="#experience">EXPERIENCE</a>
-    <a href="#education">EDUCATION</a>
-    <a href="#blog">BLOG</a>
-</div>
 
 ---
 
-<div id="about">
 ### About Me
 
 Data Scientist with over five years of experience, specializing in transforming complex data into actionable insights that drive business impact. My expertise spans Python, machine learning, large language model fine-tuning, and data visualization, complemented by hands-on experience with Microsoft Azure, Amazon AWS and product analytics through A/B testing. I am passionate about leveraging cutting-edge techniques to optimize decision-making and thrive on solving real-world challenges with innovative solutions.
-</div>
 
 ---
 
-<div id="projects">
 ### Featured Projects
 
 #### 1. LLM for Multi-Hop Question Answering on Knowledge Graphs
@@ -95,11 +58,9 @@ Data Scientist with over five years of experience, specializing in transforming 
     * **Achieved a classification accuracy of around 98%**.
     * **Reduced labor costs and optimized diagnosis processes by 10%-15%**.
 * **Tech Stack**: `Unsupervised Learning`, `Gaussian Mixture Model`, `PCA`, `Tree-based Models`
-</div>
 
 ---
 
-<div id="skills">
 ### Technical Skills
 
 * **Programming & Scripting**: Python, PySpark, R, SQL
@@ -109,21 +70,17 @@ Data Scientist with over five years of experience, specializing in transforming 
 * **Large Language Modeling**: LLM, LLM-Fine Tuning, Knowledge Graph, GraphRAG, Transformer, TensorFlow/TensorFlow Hub, PyTorch, Google-BERT, NLP
 * **Data Visualization**: Power BI, Tableau, Plotly, Plotly Dash, R Shiny
 * **Project Management & CI/CD**: Project Management, Project Scheduling, GitHub, GitLab, Azure Data Factory, Docker
-</div>
 
 ---
 
-<div id="experience">
 ### Professional Experience
 
 * **Data Scientist** | Starbucks (_December 2021 - February 2025_)
 * **Senior Associate Data Scientist** | Amgen (_June 2020 - December 2021_)
 * **Visualization Engineer** | Amgen (_August 2019 - May 2020_)
-</div>
 
 ---
 
-<div id="education">
 ### Education & Certifications
 
 * **Master of Industrial Engineering**
@@ -135,14 +92,11 @@ Data Scientist with over five years of experience, specializing in transforming 
     * Microsoft Azure AI and ML Engineering Certificate
     * Data Science Certificate issued by John Hopkins University
     * Google Data Analytics Certificate
-</div>
 
 ---
 
-<div id="blog">
 ### Blog Posts
 
 * [From Research to Application: Achieving a 2.1% Cost Optimization for Data Centers via Deep Reinforcement learning](https://www.linkedin.com/pulse/from-research-application-achieving-21-cost-data-centers-wang-ogr5c) - 2025-07-14
 
 * [How Bayesian Modeling Proved a Personalized Portfolio Decisively Outperforms a Universal Strategy](https://www.linkedin.com/pulse/how-bayesian-modeling-proved-personalized-portfolio-decisively-wang-4awaf) - 2025-07-21
-</div>

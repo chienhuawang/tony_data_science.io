@@ -1,8 +1,0 @@
-# _config.yml
-
-# 設置網站標題，這可能會顯示在瀏覽器分頁上
-title: Chien-Hua Wang | Data Scientist
-
-# 告訴 Jekyll 使用 minima 主題作為基礎（即使我們之後會覆蓋掉大部分樣式）
-# 加上這行有助於確保 Jekyll 正常啟用
-theme: minima

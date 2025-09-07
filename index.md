@@ -97,4 +97,4 @@ Data Scientist with over five years of experience, specializing in transforming 
 
 ### Blog Posts
 
-* [From Research to Application: Achieving a 2.1% Cost Optimization for Data Centers via Deep Reinforcement learning](https://www.linkedin.com/pulse/from-research-application-achieving-21-cost-data-centers-wang-ogr5c) - 2025-09-06
+* [From Research to Application: Achieving a 2.1% Cost Optimization for Data Centers via Deep Reinforcement learning](https://www.linkedin.com/pulse/from-research-application-achieving-21-cost-data-centers-wang-ogr5c) - 2025-07-14

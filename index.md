@@ -98,3 +98,5 @@ Data Scientist with over five years of experience, specializing in transforming 
 ### Blog Posts
 
 * [From Research to Application: Achieving a 2.1% Cost Optimization for Data Centers via Deep Reinforcement learning](https://www.linkedin.com/pulse/from-research-application-achieving-21-cost-data-centers-wang-ogr5c) - 2025-07-14
+
+* [How Bayesian Modeling Proved a Personalized Portfolio Decisively Outperforms a Universal Strategy](https://www.linkedin.com/pulse/how-bayesian-modeling-proved-personalized-portfolio-decisively-wang-4awaf) - 2025-07-21

@@ -21,14 +21,20 @@ html {
 .nav-buttons a {
     display: inline-block;
     padding: 10px 25px;
+    
+    /* 按鈕背景色：接近白色 */
     background-color: #f0f0f0;
+    /* 文字顏色：深灰色以保持可讀性 */
     color: #333;
+    
     text-decoration: none;
     border-radius: 8px;
     transition: all 0.3s ease;
     font-weight: bold;
     letter-spacing: 1px;
     white-space: nowrap;
+
+    /* 立體感和陰影效果 */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
                 0 6px 12px 0 rgba(0, 0, 0, 0.08);
 }
@@ -41,11 +47,12 @@ html {
     transform: translateY(-2px);
 }
 
-/* Active (點擊時) 效果 */
+/* Active (點擊時) 效果 - 實現顏色互換 */
 .nav-buttons a:active {
-    background-color: #d0d0d0;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
-    transform: translateY(0);
+    background-color: #333; /* 背景色變為原本的文字顏色 */
+    color: #f0f0f0; /* 文字顏色變為原本的背景顏色 */
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08); /* 點擊時陰影變小，模擬按壓感 */
+    transform: translateY(0); /* 回歸原位 */
 }
 
 /* ===== BACK TO TOP BUTTON STYLES ===== */

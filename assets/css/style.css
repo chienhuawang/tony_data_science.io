@@ -320,3 +320,33 @@ body {
     /* 更明顯的綠色光暈 */
     box-shadow: 0 0 12px rgba(40, 167, 69, 0.5);
 }
+
+/* ===== SOCIAL ICON BUTTON STYLES (REVISED RECTANGLE VERSION) ===== */
+
+.social-icon-button {
+    /* 1. 尺寸與對齊 */
+    display: inline-flex;     /* 使用 flexbox 確保內部 Logo 完美置中 */
+    vertical-align: middle;   /* 關鍵！讓按鈕與旁邊的 Email 文字垂直對齊 */
+    padding: 6px 10px;        /* 控制按鈕大小，高度會與文字協調 */
+
+    /* 2. 外觀與形狀 */
+    background-color: #ffffff; /* 白色背景 */
+    border-radius: 8px;       /* 圓角矩形，與您的導覽按鈕風格一致 */
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12); /* 更細緻的立體陰影 */
+    
+    /* 3. 間距與互動效果 */
+    margin-right: 8px;        /* 與右邊的 "|" 分隔線產生一些間距 */
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icon-button:hover {
+    /* 滑鼠靠近時，按鈕向上浮動，陰影加深 */
+    transform: translateY(-2px);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.social-icon-logo {
+    /* 4. 調整 Logo 尺寸以適應新按鈕 */
+    width: 55px;
+    height: 30px;
+}

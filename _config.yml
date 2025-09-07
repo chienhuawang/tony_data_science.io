@@ -1,20 +1,4 @@
 # _config.yml
 
-# 設置網站標題，這會顯示在瀏覽器分頁和 Jekyll 主題的頁眉
+# 設置網站標題，這會顯示在瀏覽器分頁上
 title: Chien-Hua Wang | Data Scientist
-
-# 告訴 Jekyll 使用 minima 主題作為基礎
-# 這會啟用 Jekyll 處理器，但我們將控制其樣式
-theme: minima
-
-# Minima 主題的特定設定，用於包含自定義 CSS
-# 這會讓 Jekyll 在處理 CSS 時，將您的 style.css 視為一個 SASS/CSS 檔案
-# 並將其編譯到最終的樣式表中。
-# 注意: 請確保您的 style.css 檔案內是有效的 CSS 或 SCSS。
-minima:
-  skin: dark # 選擇 minima 的深色皮膚，或者您可以留空讓它用預設的
-  css_asset: /assets/css/style.css # 這是關鍵！明確告訴 minima 主題使用這個 CSS 檔案
-
-# 如果您希望完全禁用 Minima 主題的預設 CSS，可以考慮以下設置
-# 但通常上面那個 `css_asset` 已經足夠覆蓋。
-# 如果您仍然看到不想要的主題樣式，可能需要更深入地自定義 Minima 的佈局。

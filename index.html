@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chien-Hua Wang | Data Scientist</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -37,137 +38,118 @@
         
         <hr>
         
-        <h3 id="about">About Me</h3>
-        <p>Data Scientist with over five years of experience, specializing in transforming complex data into actionable insights that drive business impact. My expertise spans Python, machine learning, large language model fine-tuning, and data visualization, complemented by hands-on experience with Microsoft Azure, Amazon AWS and product analytics through A/B testing. I am passionate about leveraging cutting-edge techniques to optimize decision-making and thrive on solving real-world challenges with innovative solutions.</p>
+        <div data-aos="fade-up">
+            <h3 id="about">About Me</h3>
+            <p>Data Scientist with over five years of experience, specializing in transforming complex data into actionable insights that drive business impact. My expertise spans Python, machine learning, large language model fine-tuning, and data visualization, complemented by hands-on experience with Microsoft Azure, Amazon AWS and product analytics through A/B testing. I am passionate about leveraging cutting-edge techniques to optimize decision-making and thrive on solving real-world challenges with innovative solutions.</p>
+        </div>
         
         <hr>
         
-        <h3 id="projects">Featured Projects</h3>
+        <div data-aos="fade-up">
+            <h3 id="projects">Featured Projects</h3>
+            
+            <div class="project-grid">
+                <div class="project-card">
+                    <h4>LLM for Multi-Hop Q&A</h4>
+                    <p class="project-context">Addressing challenges in multi-hop question answering on knowledge graphs, especially in Chinese contexts.</p>
+                    <div class="tech-stack">
+                        <span>LLM Fine-Tuning</span>
+                        <span>Graph-RAG</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>Marketing A/B Testing</h4>
+                    <p class="project-context">Designed and validated a personalized promotion strategy, increasing participation by 20% and conversion by 12%.</p>
+                    <div class="tech-stack">
+                        <span>A/B Testing</span>
+                        <span>Bayesian Methods</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>Demand Forecasting</h4>
+                    <p class="project-context">Developed a demand forecast model for 10k+ stores, achieving 85%-95% accuracy and reducing labor costs.</p>
+                    <div class="tech-stack">
+                        <span>Time Series</span>
+                        <span>Prophet</span>
+                        <span>PySpark</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h4>CKD Diagnosis ML Model</h4>
+                    <p class="project-context">Built an unsupervised learning model for Chronic Kidney Disease diagnosis with 98% classification accuracy.</p>
+                    <div class="tech-stack">
+                        <span>Unsupervised Learning</span>
+                        <span>PCA</span>
+                        <span>GMM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div data-aos="fade-up">
+            <h3 id="skills">Technical Skills</h3>
+            <ul>
+                <li><strong>Programming & Scripting</strong>: Python, PySpark, R, SQL</li>
+                <li><strong>Data Engineering & ETL</strong>: Azure Databricks, ETL, SQL, Web Scraping (Transformers, SpaCy Requests), URLlib</li>
+                <li><strong>Cloud Services</strong>: Azure Service, Azure Delta Lake, Azure Synapse Analytics, AWS, AWS S3, AWS Glue, AWS Redshift</li>
+                <li><strong>AI & Machine Learning</strong>: Supervised Learning, Unsupervised Learning, Deep Learning (Neural Networks), HDBSCAN, UMAP, A/B Testing, Reinforcement Learning, Statistical Validation, Stable Baseline3</li>
+                <li><strong>Large Language Modeling</strong>: LLM, LLM-Fine Tuning, Knowledge Graph, GraphRAG, Transformer, TensorFlow/TensorFlow Hub, PyTorch, Google-BERT, NLP</li>
+                <li><strong>Data Visualization</strong>: Power BI, Tableau, Plotly, Plotly Dash, R Shiny</li>
+                <li><strong>Project Management & CI/CD</strong>: Project Management, Project Scheduling, GitHub, GitLab, Azure Data Factory, Docker</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div data-aos="fade-up">
+            <h3 id="experience">Professional Experience</h3>
+            <ul>
+                <li><strong>Data Scientist</strong> | Starbucks (<em>December 2021 - February 2025</em>)</li>
+                <li><strong>Senior Associate Data Scientist</strong> | Amgen (<em>June 2020 - December 2021</em>)</li>
+                <li><strong>Visualization Engineer</strong> | Amgen (<em>August 2019 - May 2020</em>)</li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div data-aos="fade-up">
+            <h3 id="education">Education & Certifications</h3>
+            <ul>
+                <li><strong>Master of Industrial Engineering</strong>
+                    <ul><li>Texas A&M University, College Station, Texas</li></ul>
+                </li>
+                <li><strong>Bachelor of Electrical Engineering</strong>
+                    <ul><li>Tatung University, Taipei, Taiwan</li></ul>
+                </li>
+                <li><strong>Licenses & Certifications</strong>:
+                    <ul>
+                        <li>Microsoft Azure AI and ML Engineering Certificate</li>
+                        <li>Data Science Certificate issued by John Hopkins University</li>
+                        <li>Google Data Analytics Certificate</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <hr>
         
-        <h4>1. LLM for Multi-Hop Question Answering on Knowledge Graphs</h4>
-        <ul>
-            <li><strong>Context</strong>: Industrial level training with Coursera and Microsoft, addressing the challenge of existing LLMs struggling with multi-hop question answering grounded in structured knowledge graphs, especially in Chinese-language contexts.</li>
-            <li><strong>Method</strong>:
-                <ul>
-                    <li>Designed and implemented a Graph-RAG architecture using Llamaindex's <code>PropertyGraphIndex</code>, integrated with OpenAI's GPT-3.5-turbo fine-tuning pipeline.</li>
-                    <li>Programmatically generated high-quality JSONL training data combining contextual retrieval and manually curated golden responses.</li>
-                </ul>
-            </li>
-            <li><strong>Results</strong>: Successfully fine-tuned an LLM capable of precise knowledge graph reasoning and context-aware responses, significantly improving answer accuracy and interpretability for both Chinese and multilingual RAG systems.</li>
-            <li><strong>Tech Stack</strong>: <code>LLM Fine-Tuning</code>, <code>Graph-RAG</code>, <code>Llamaindex</code>, <code>Knowledge Graph</code>, <code>GPT-3.5-turbo</code>, <code>Python</code></li>
-        </ul>
-
-        <h4>2. Marketing Promotion Strategy A/B Testing (Starbucks)</h4>
-        <ul>
-            <li><strong>Context</strong>: Supported the design of an A/B testing blueprint to launch a customized personal promotion strategy for Starbucks.</li>
-            <li><strong>Method</strong>:
-                <ul>
-                    <li>Leveraged KPIs such as Participation Rate, Average Spending, and Conversion Rate.</li>
-                    <li>Designed a Python application for the decision-making process and applied the Chi-square test and a PSM-Hierarchical-Bayesian-DID method to validate statistical significance.</li>
-                </ul>
-            </li>
-            <li><strong>Results</strong>:
-                <ul>
-                    <li><strong>Increased the overall promotion participation rate by around 20%</strong>.</li>
-                    <li><strong>Increased the conversion rate by around 12%</strong>.</li>
-                </ul>
-            </li>
-            <li><strong>Tech Stack</strong>: <code>A/B Testing</code>, <code>Statistical Validation</code>, <code>Chi-square Test</code>, <code>Bayesian Methods</code>, <code>Python</code></li>
-        </ul>
-
-        <h4>3. Customer Demand Forecast and Intelligent Recommendation (Starbucks)</h4>
-        <ul>
-            <li><strong>Context</strong>: Developed an internal core driver to simulate store demand, optimizing labor costs while maximizing profits.</li>
-            <li><strong>Method</strong>:
-                <ul>
-                    <li>Utilized the Facebook Prophet algorithm API for simulation and optimized backend logic with PySpark.</li>
-                    <li>Predicted demand by 15-minute intervals across different channels and items.</li>
-                </ul>
-            </li>
-            <li><strong>Results</strong>:
-                <ul>
-                    <li><strong>Achieved an accuracy rate of 85%-95%</strong> for 10,000 to 20,000 stores.</li>
-                    <li><strong>Reduced labor costs by 5%-10%</strong> and <strong>increased profits by 2%-5%</strong>.</li>
-                </ul>
-            </li>
-            <li><strong>Tech Stack</strong>: <code>Time Series Forecasting</code>, <code>Facebook Prophet</code>, <code>PySpark</code>, <code>Optimization</code></li>
-        </ul>
-
-        <h4>4. Unsupervised Machine Learning for Chronic Kidney Disease Diagnosis (Amgen)</h4>
-        <ul>
-            <li><strong>Context</strong>: Automated patient classification to enable more accurate treatment plans at Amgen.</li>
-            <li><strong>Method</strong>:
-                <ul>
-                    <li>Performed feature selection using tree-based models and improved computing time with PCA.</li>
-                    <li>Classified groups using the Gaussian Mixture algorithm, embedding new labels for accurate patient treatment.</li>
-                </ul>
-            </li>
-            <li><strong>Results</strong>:
-                <ul>
-                    <li><strong>Achieved a classification accuracy of around 98%</strong>.</li>
-                    <li><strong>Reduced labor costs and optimized diagnosis processes by 10%-15%</strong>.</li>
-                </ul>
-            </li>
-            <li><strong>Tech Stack</strong>: <code>Unsupervised Learning</code>, <code>Gaussian Mixture Model</code>, <code>PCA</code>, <code>Tree-based Models</code></li>
-        </ul>
-
-        <hr>
-
-        <h3 id="skills">Technical Skills</h3>
-        <ul>
-            <li><strong>Programming & Scripting</strong>: Python, PySpark, R, SQL</li>
-            <li><strong>Data Engineering & ETL</strong>: Azure Databricks, ETL, SQL, Web Scraping (Transformers, SpaCy Requests), URLlib</li>
-            <li><strong>Cloud Services</strong>: Azure Service, Azure Delta Lake, Azure Synapse Analytics, AWS, AWS S3, AWS Glue, AWS Redshift</li>
-            <li><strong>AI & Machine Learning</strong>: Supervised Learning, Unsupervised Learning, Deep Learning (Neural Networks), HDBSCAN, UMAP, A/B Testing, Reinforcement Learning, Statistical Validation, Stable Baseline3</li>
-            <li><strong>Large Language Modeling</strong>: LLM, LLM-Fine Tuning, Knowledge Graph, GraphRAG, Transformer, TensorFlow/TensorFlow Hub, PyTorch, Google-BERT, NLP</li>
-            <li><strong>Data Visualization</strong>: Power BI, Tableau, Plotly, Plotly Dash, R Shiny</li>
-            <li><strong>Project Management & CI/CD</strong>: Project Management, Project Scheduling, GitHub, GitLab, Azure Data Factory, Docker</li>
-        </ul>
-
-        <hr>
-
-        <h3 id="experience">Professional Experience</h3>
-        <ul>
-            <li><strong>Data Scientist</strong> | Starbucks (<em>December 2021 - February 2025</em>)</li>
-            <li><strong>Senior Associate Data Scientist</strong> | Amgen (<em>June 2020 - December 2021</em>)</li>
-            <li><strong>Visualization Engineer</strong> | Amgen (<em>August 2019 - May 2020</em>)</li>
-        </ul>
-
-        <hr>
-
-        <h3 id="education">Education & Certifications</h3>
-        <ul>
-            <li><strong>Master of Industrial Engineering</strong>
-                <ul>
-                    <li>Texas A&M University, College Station, Texas</li>
-                </ul>
-            </li>
-            <li><strong>Bachelor of Electrical Engineering</strong>
-                <ul>
-                    <li>Tatung University, Taipei, Taiwan</li>
-                </ul>
-            </li>
-            <li><strong>Licenses & Certifications</strong>:
-                <ul>
-                    <li>Microsoft Azure AI and ML Engineering Certificate</li>
-                    <li>Data Science Certificate issued by John Hopkins University</li>
-                    <li>Google Data Analytics Certificate</li>
-                </ul>
-            </li>
-        </ul>
-
-        <hr>
-
-        <h3 id="blog">Blog Posts</h3>
-        <ul>
-            <li><a href="https://www.linkedin.com/pulse/from-research-application-achieving-21-cost-data-centers-wang-ogr5c">From Research to Application: Achieving a 2.1% Cost Optimization for Data Centers via Deep Reinforcement learning</a> - 2025-07-14</li>
-            <li><a href="https://www.linkedin.com/pulse/how-bayesian-modeling-proved-personalized-portfolio-decisively-wang-4awaf">How Bayesian Modeling Proved a Personalized Portfolio Decisively Outperforms a Universal Strategy</a> - 2025-07-21</li>
-        </ul>
+        <div data-aos="fade-up">
+            <h3 id="blog">Blog Posts</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/pulse/from-research-application-achieving-21-cost-data-centers-wang-ogr5c">From Research to Application: Achieving a 2.1% Cost Optimization for Data Centers via Deep Reinforcement learning</a> - 2025-07-14</li>
+                <li><a href="https://www.linkedin.com/pulse/how-bayesian-modeling-proved-personalized-portfolio-decisively-wang-4awaf">How Bayesian Modeling Proved a Personalized Portfolio Decisively Outperforms a Universal Strategy</a> - 2025-07-21</li>
+            </ul>
+        </div>
 
         </div>
 
     <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

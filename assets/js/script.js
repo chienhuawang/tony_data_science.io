@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // ===== INITIALIZE AOS ANIMATION LIBRARY (NEW) =====
+    AOS.init({
+        duration: 800, // 動畫持續時間 (毫秒)
+        once: true, // 動畫只觸發一次
+    });
+
     // ===== SMOOTH SCROLL FOR NAV BUTTONS =====
     const navLinks = document.querySelectorAll('.nav-buttons a');
 
@@ -17,13 +23,11 @@ document.addEventListener('DOMContentLoaded', function() {
     // ===== BACK TO TOP BUTTON LOGIC =====
     const backToTopButton = document.getElementById("back-to-top");
 
-    // 當使用者滾動頁面時，執行 scrollFunction
     window.onscroll = function() {
         scrollFunction();
     };
 
     function scrollFunction() {
-        // 如果頁面滾動超過 200px，就顯示按鈕
         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
             backToTopButton.style.display = "block";
         } else {
@@ -31,9 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // 當使用者點擊按鈕時，平滑滾動到頁面頂部
     backToTopButton.addEventListener('click', function(event) {
-        event.preventDefault(); // 防止 # 連結的預設跳轉行為
+        event.preventDefault();
         window.scrollTo({
             top: 0,
             behavior: 'smooth'

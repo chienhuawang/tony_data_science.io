@@ -4,15 +4,15 @@ html {
 }
 
 body {
-    margin: 0; /* 移除 body 的預設邊距，讓背景色能填滿整個寬度 */
-    font-family: sans-serif; /* 建議設定一個基礎字體 */
+    margin: 0;
+    font-family: sans-serif;
 }
 
-/* ===== HERO SECTION STYLES (NEW) ===== */
+/* ===== HERO SECTION STYLES ===== */
 .hero-section {
-    background-color: #f5f5f5; /* 簡約的淺灰色 */
-    padding-top: 20px; /* 增加頂部內邊距，讓內容不會太貼近頁面頂端 */
-    padding-bottom: 20px; /* 增加底部內邊距 */
+    background-color: #f5f5f5;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 /* Styles for the navigation buttons container */
@@ -29,7 +29,6 @@ body {
     margin-right: auto;
 }
 
-/* Styles for individual navigation buttons */
 .nav-buttons a {
     display: inline-block;
     padding: 10px 25px;
@@ -41,24 +40,69 @@ body {
     font-weight: bold;
     letter-spacing: 1px;
     white-space: nowrap;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
-                0 6px 12px 0 rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.08);
 }
 
-/* Hover (鼠標懸停) 效果 */
 .nav-buttons a:hover {
     background-color: #e0e0e0;
-    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.15),
-                0 9px 20px 0 rgba(0,0,0,0.12);
+    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.15), 0 9px 20px 0 rgba(0,0,0,0.12);
     transform: translateY(-2px);
 }
 
-/* Active (點擊時) 效果 */
 .nav-buttons a:active {
     background-color: #333;
     color: #f0f0f0;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
     transform: translateY(0);
+}
+
+/* ===== PROJECT CARD STYLES (NEW) ===== */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 響應式網格布局 */
+    gap: 20px; /* 卡片之間的間隔 */
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* 讓卡片看起來可以點擊 */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* 懸停時輕微上浮 */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* 懸停時陰影更明顯 */
+}
+
+.project-card h4 {
+    margin-top: 0;
+    color: #333;
+}
+
+.project-card .project-context {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.5;
+}
+
+.project-card .tech-stack {
+    margin-top: 15px;
+}
+
+.project-card .tech-stack span {
+    display: inline-block;
+    background-color: #e7e7e7;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 /* ===== BACK TO TOP BUTTON STYLES ===== */

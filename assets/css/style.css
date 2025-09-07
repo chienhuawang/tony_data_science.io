@@ -1,0 +1,8 @@
+.profile-icon {
+    position: absolute;
+    top: 30px; /* 距離頁面頂部的距離 */
+    right: 30px; /* 距離頁面右側的距離 */
+    width: 120px; /* 圖片寬度 */
+    border-radius: 50%; /* 圓形圖片 */
+    z-index: 1000; /* 確保圖片在其他內容之上 */
+}

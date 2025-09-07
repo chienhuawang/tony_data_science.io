@@ -1,4 +1,4 @@
-<img src="images/tony_icon.png" alt="Chien-Hua Wang" style="position: absolute; top: 30px; right: 30px; width: 120px; border-radius: 50%;">
+<img src="images/tony_icon.png" alt="Chien-Hua Wang" class="profile-icon">
 
 # Chien-Hua Wang | Data Scientist
 

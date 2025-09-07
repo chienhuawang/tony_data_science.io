@@ -13,32 +13,32 @@ html {
 /* Styles for individual navigation buttons */
 .nav-buttons a {
     display: inline-block;
-    padding: 10px 25px; /* 增加左右內邊距，讓按鈕看起來更飽滿 */
-    margin: 0 12px; /* 增加左右外邊距，拉開按鈕間隔 */
-    background-color: #4CAF50; /* 按鈕背景色，改成更鮮明的綠色，您可以自行更換 */
-    color: white; /* 文字顏色 */
-    text-decoration: none; /* 去除下劃線 */
-    border-radius: 8px; /* 稍微增加圓角，讓按鈕更柔和 */
-    transition: all 0.3s ease; /* 平滑過渡效果，包括陰影和背景色 */
-    font-weight: bold; /* 加粗文字 */
-    letter-spacing: 1px; /* 稍微增加文字間距 */
+    padding: 10px 25px;
+    margin: 0 12px;
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Text color */
+    text-decoration: none; /* Removes the underline */
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
 
     /* 立體感和陰影效果 */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), /* 輕微的向下陰影 */
-                0 6px 20px 0 rgba(0, 0, 0, 0.19); /* 更明顯的立體陰影 */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Hover (鼠標懸停) 效果 */
 .nav-buttons a:hover {
-    background-color: #45a049; /* 懸停時背景色變深一點 */
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3), /* 懸停時陰影更明顯 */
+    background-color: #45a049;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3),
                 0 12px 40px 0 rgba(0,0,0,0.25);
-    transform: translateY(-2px); /* 輕微上浮效果，增加互動感 */
+    transform: translateY(-2px);
 }
 
 /* Active (點擊時) 效果 */
 .nav-buttons a:active {
-    background-color: #3e8e41; /* 點擊時背景色再變深 */
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1); /* 點擊時陰影變小，模擬按壓感 */
-    transform: translateY(0); /* 回歸原位 */
+    background-color: #3e8e41;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+    transform: translateY(0);
 }

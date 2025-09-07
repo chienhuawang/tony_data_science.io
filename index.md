@@ -1,3 +1,6 @@
+---
+layout: default
+---
 <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
   <tr>
     <td style="vertical-align: top; padding-right: 20px;">

@@ -244,6 +244,8 @@ body {
     gap: 10px; /* 標籤之間的間隔 */
 }
 
+/* ===== SKILL PILLS - REFINED HOVER EFFECT ===== */
+
 .skill-pill {
     background-color: #e7e7e7;
     color: #555;
@@ -251,12 +253,19 @@ body {
     border-radius: 20px;
     font-size: 0.9em;
     font-weight: 500;
-    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer; /* 增加鼠標指針，提示可互動 */
+    /* 讓所有變化的動畫都平滑過渡 */
+    transition: all 0.3s ease; 
 }
 
 .skill-pill:hover {
-    background-color: #4CAF50; /* 滑鼠懸停時變為綠色 */
-    color: white;
+    /* 1. 向外突出效果：向上移動 2px 並放大 5% */
+    transform: translateY(-2px) scale(1.05);
+
+    /* 2. 帶有光暈的淡藍色特效 */
+    background-color: #eaf6ff; /* 非常淡的藍色背景 */
+    color: #0056b3; /* 深藍色文字，增加對比度 */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3); /* 柔和的藍色光暈 */
 }
 
 /* 在較寬的螢幕上（大於 768px），讓技能卡片變為兩欄 */

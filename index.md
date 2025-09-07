@@ -15,7 +15,7 @@
 
 ### About Me
 
-Data Scientist with over five years of experience, specializing in transforming complex data into actionable insights that drive business impact. My expertise spans Python, machine learning, large language model fine-tuning, and data visualization, complemented by hands-on experience with Azure Data Factory and product analytics through $A/B$ testing. I am passionate about leveraging cutting-edge techniques to optimize decision-making and thrive on solving real-world challenges with innovative solutions.
+Data Scientist with over five years of experience, specializing in transforming complex data into actionable insights that drive business impact. My expertise spans Python, machine learning, large language model fine-tuning, and data visualization, complemented by hands-on experience with Azure Data Factory and product analytics through A/B testing. I am passionate about leveraging cutting-edge techniques to optimize decision-making and thrive on solving real-world challenges with innovative solutions.
 
 ---
 
@@ -30,7 +30,7 @@ Data Scientist with over five years of experience, specializing in transforming 
 * **Tech Stack**: `LLM Fine-Tuning`, `Graph-RAG`, `Llamaindex`, `Knowledge Graph`, `GPT-3.5-turbo`, `Python`
 
 #### 2. Marketing Promotion Strategy A/B Testing (Starbucks)
-* **Context**: Supported the design of an $A/B$ testing blueprint to launch a customized personal promotion strategy for Starbucks.
+* **Context**: Supported the design of an A/B testing blueprint to launch a customized personal promotion strategy for Starbucks.
 * **Method**:
     * Leveraged KPIs such as Participation Rate, Average Spending, and Conversion Rate.
     * Designed a Python application for the decision-making process and applied the Chi-square test and a PSM-Hierarchical-Bayesian-DID method to validate statistical significance.

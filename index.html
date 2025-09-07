@@ -22,7 +22,6 @@
                 </td>
               </tr>
             </table>
-
             <div class="nav-buttons">
                 <a href="#about">ABOUT</a>
                 <a href="#projects">PROJECTS</a>
@@ -35,55 +34,51 @@
     </div>
 
     <div class="container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
-        
         <hr>
-        
         <div data-aos="fade-up">
             <h3 id="about">About Me</h3>
-            <p>Data Scientist with over five years of experience, specializing in transforming complex data into actionable insights that drive business impact. My expertise spans Python, machine learning, large language model fine-tuning, and data visualization, complemented by hands-on experience with Microsoft Azure, Amazon AWS and product analytics through A/B testing. I am passionate about leveraging cutting-edge techniques to optimize decision-making and thrive on solving real-world challenges with innovative solutions.</p>
+            <p>Data Scientist with over five years of experience in data science, specialize in transforming complex data into actionable insights that drive business impact. My expertise spans Python, machine learning, large language model fine-tuning, and data visualization, complemented by hands-on experience with Azure Data Factory and product analytics through A/B testing. Passionate about leveraging cutting-edge techniques to optimize decision-making, I thrive on solving real-world challenges with innovative solutions.</p>
         </div>
         
         <hr>
         
         <div data-aos="fade-up">
             <h3 id="projects">Featured Projects</h3>
-            
             <div class="project-grid">
-                <div class="project-card">
+                <div class="project-card" data-modal-target="#project-modal-1">
                     <h4>LLM for Multi-Hop Q&A</h4>
-                    <p class="project-context">Addressing challenges in multi-hop question answering on knowledge graphs, especially in Chinese contexts.</p>
-                    <div class="tech-stack">
-                        <span>LLM Fine-Tuning</span>
-                        <span>Graph-RAG</span>
-                        <span>Python</span>
-                    </div>
+                    <p class="project-context">Fine-tuned a multilingual LLM for complex question answering on knowledge graphs.</p>
+                    <div class="tech-stack"><span>LLM Fine-Tuning</span><span>Graph-RAG</span><span>Python</span></div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-modal-target="#project-modal-2">
                     <h4>Marketing A/B Testing</h4>
-                    <p class="project-context">Designed and validated a personalized promotion strategy, increasing participation by 20% and conversion by 12%.</p>
-                    <div class="tech-stack">
-                        <span>A/B Testing</span>
-                        <span>Bayesian Methods</span>
-                        <span>Python</span>
-                    </div>
+                    <p class="project-context">Designed and validated a personalized promotion strategy, increasing participation by 20%.</p>
+                    <div class="tech-stack"><span>A/B Testing</span><span>Bayesian Methods</span><span>Python</span></div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-modal-target="#project-modal-3">
+                    <h4>ADF Feature Migration</h4>
+                    <p class="project-context">Planned and executed feature migrations using Azure Data Factory and Databricks.</p>
+                    <div class="tech-stack"><span>Azure Data Factory</span><span>ETL</span><span>Scheduling</span></div>
+                </div>
+                <div class="project-card" data-modal-target="#project-modal-4">
                     <h4>Demand Forecasting</h4>
-                    <p class="project-context">Developed a demand forecast model for 10k+ stores, achieving 85%-95% accuracy and reducing labor costs.</p>
-                    <div class="tech-stack">
-                        <span>Time Series</span>
-                        <span>Prophet</span>
-                        <span>PySpark</span>
-                    </div>
+                    <p class="project-context">Developed a demand forecast model for 10k+ stores, achieving 85%-95% accuracy.</p>
+                    <div class="tech-stack"><span>Time Series</span><span>Prophet</span><span>PySpark</span></div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-modal-target="#project-modal-5">
                     <h4>CKD Diagnosis ML Model</h4>
-                    <p class="project-context">Built an unsupervised learning model for Chronic Kidney Disease diagnosis with 98% classification accuracy.</p>
-                    <div class="tech-stack">
-                        <span>Unsupervised Learning</span>
-                        <span>PCA</span>
-                        <span>GMM</span>
-                    </div>
+                    <p class="project-context">Built an unsupervised learning model for Chronic Kidney Disease diagnosis with 98% accuracy.</p>
+                    <div class="tech-stack"><span>Unsupervised Learning</span><span>PCA</span><span>GMM</span></div>
+                </div>
+                <div class="project-card" data-modal-target="#project-modal-6">
+                    <h4>NLP Complaint Classification</h4>
+                    <p class="project-context">Applied sentence encoders and clustering to classify user complaint issues with 85% accuracy.</p>
+                    <div class="tech-stack"><span>NLP</span><span>UMAP</span><span>HDBSCAN</span></div>
+                </div>
+                <div class="project-card" data-modal-target="#project-modal-7">
+                    <h4>Cost of Sales Dashboard</h4>
+                    <p class="project-context">Optimized financial reporting processes, reducing processing time from one month to one day.</p>
+                    <div class="tech-stack"><span>Data Visualization</span><span>Reporting</span><span>KPIs</span></div>
                 </div>
             </div>
         </div>
@@ -92,26 +87,101 @@
 
         <div data-aos="fade-up">
             <h3 id="skills">Technical Skills</h3>
-            <ul>
-                <li><strong>Programming & Scripting</strong>: Python, PySpark, R, SQL</li>
-                <li><strong>Data Engineering & ETL</strong>: Azure Databricks, ETL, SQL, Web Scraping (Transformers, SpaCy Requests), URLlib</li>
-                <li><strong>Cloud Services</strong>: Azure Service, Azure Delta Lake, Azure Synapse Analytics, AWS, AWS S3, AWS Glue, AWS Redshift</li>
-                <li><strong>AI & Machine Learning</strong>: Supervised Learning, Unsupervised Learning, Deep Learning (Neural Networks), HDBSCAN, UMAP, A/B Testing, Reinforcement Learning, Statistical Validation, Stable Baseline3</li>
-                <li><strong>Large Language Modeling</strong>: LLM, LLM-Fine Tuning, Knowledge Graph, GraphRAG, Transformer, TensorFlow/TensorFlow Hub, PyTorch, Google-BERT, NLP</li>
-                <li><strong>Data Visualization</strong>: Power BI, Tableau, Plotly, Plotly Dash, R Shiny</li>
-                <li><strong>Project Management & CI/CD</strong>: Project Management, Project Scheduling, GitHub, GitLab, Azure Data Factory, Docker</li>
-            </ul>
+            <div class="skill-categories">
+                <div class="skill-category-card">
+                    <h4>Programming & Scripting Languages</h4>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">PySpark</span>
+                        <span class="skill-pill">R</span>
+                        <span class="skill-pill">SQL</span>
+                    </div>
+                </div>
+                <div class="skill-category-card">
+                    <h4>Data Engineering & ETL</h4>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Azure Databricks</span>
+                        <span class="skill-pill">ETL</span>
+                        <span class="skill-pill">SQL</span>
+                        <span class="skill-pill">Web Scraping</span>
+                    </div>
+                </div>
+                <div class="skill-category-card">
+                    <h4>Cloud Service</h4>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Azure</span>
+                        <span class="skill-pill">AWS</span>
+                        <span class="skill-pill">Delta Lake</span>
+                        <span class="skill-pill">Synapse Analytics</span>
+                        <span class="skill-pill">S3</span>
+                        <span class="skill-pill">Glue</span>
+                        <span class="skill-pill">Redshift</span>
+                    </div>
+                </div>
+                <div class="skill-category-card">
+                    <h4>Al and Machine Learning</h4>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Supervised Learning</span>
+                        <span class="skill-pill">Unsupervised Learning</span>
+                        <span class="skill-pill">Deep Learning</span>
+                        <span class="skill-pill">A/B Testing</span>
+                        <span class="skill-pill">Reinforcement Learning</span>
+                    </div>
+                </div>
+                <div class="skill-category-card">
+                    <h4>Large Language Modeling</h4>
+                    <div class="skill-pills">
+                        <span class="skill-pill">LLM Fine-Tuning</span>
+                        <span class="skill-pill">GraphRAG</span>
+                        <span class="skill-pill">Knowledge Graph</span>
+                        <span class="skill-pill">Transformer</span>
+                        <span class="skill-pill">PyTorch</span>
+                        <span class="skill-pill">NLP</span>
+                    </div>
+                </div>
+                <div class="skill-category-card">
+                    <h4>Data Visualization</h4>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Power BI</span>
+                        <span class="skill-pill">Tableau</span>
+                        <span class="skill-pill">Plotly</span>
+                        <span class="skill-pill">Plotly Dash</span>
+                        <span class="skill-pill">R Shiny</span>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <hr>
 
         <div data-aos="fade-up">
             <h3 id="experience">Professional Experience</h3>
-            <ul>
-                <li><strong>Data Scientist</strong> | Starbucks (<em>December 2021 - February 2025</em>)</li>
-                <li><strong>Senior Associate Data Scientist</strong> | Amgen (<em>June 2020 - December 2021</em>)</li>
-                <li><strong>Visualization Engineer</strong> | Amgen (<em>August 2019 - May 2020</em>)</li>
-            </ul>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Data Scientist</h3>
+                        <p class="timeline-company">Starbucks</p>
+                        <p class="timeline-date"><em>December 2021 - February 2025</em></p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Associate Data Scientist</h3>
+                        <p class="timeline-company">Amgen</p>
+                        <p class="timeline-date"><em>June 2020 - December 2021</em></p>
+                    </div>
+                </div>
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Visualization Engineer</h3>
+                        <p class="timeline-company">Amgen</p>
+                        <p class="timeline-date"><em>August 2019 - May 2020</em></p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <hr>
@@ -120,18 +190,16 @@
             <h3 id="education">Education & Certifications</h3>
             <ul>
                 <li><strong>Master of Industrial Engineering</strong>
-                    <ul><li>Texas A&M University, College Station, Texas</li></ul>
+                    <ul><li>TEXAS A&M UNIVERSITY-COLLEGE STATION, Texas, United States</li></ul>
                 </li>
                 <li><strong>Bachelor of Electrical Engineering</strong>
-                    <ul><li>Tatung University, Taipei, Taiwan</li></ul>
+                    <ul><li>TATUNG UNIVERSITY, Taipei, Taiwan</li></ul>
                 </li>
-                <li><strong>Licenses & Certifications</strong>:
-                    <ul>
-                        <li>Microsoft Azure AI and ML Engineering Certificate</li>
-                        <li>Data Science Certificate issued by John Hopkins University</li>
-                        <li>Google Data Analytics Certificate</li>
-                    </ul>
-                </li>
+                <li><strong>Licenses & Certifications</strong>:<ul>
+                    <li>Microsoft Azure Al and ML Engineering Certificate</li>
+                    <li>Data Science Certificate issued by John Hopkins University</li>
+                    <li>Google Data Analytics Certificate</li>
+                </ul></li>
             </ul>
         </div>
 
@@ -144,10 +212,84 @@
                 <li><a href="https://www.linkedin.com/pulse/how-bayesian-modeling-proved-personalized-portfolio-decisively-wang-4awaf">How Bayesian Modeling Proved a Personalized Portfolio Decisively Outperforms a Universal Strategy</a> - 2025-07-21</li>
             </ul>
         </div>
-
-        </div>
+    </div>
 
     <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+
+    <div class="modal" id="project-modal-1">
+        <div class="modal-header">
+            <div class="title">LLM for Multi-Hop Q&A</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Context</strong>: Existing LLMs struggle to accurately perform multi-hop question answering grounded in structured knowledge graphs, especially under Chinese-language contexts with limited fine-tuning support.</p>
+            <p><strong>Method</strong>:</p><ul><li>Designed and implemented a Graph-RAG architecture using Llamaindex's PropertyGraphIndex, integrated with OpenAl's GPT-3.5-turbo fine-tuning pipeline.</li><li>Programmatically generated high-quality JSONL training data combining contextual retrieval and manually curated golden responses.</li></ul>
+            <p><strong>Results</strong>: Successfully fine-tuned an LLM capable of precise knowledge graph reasoning and context-aware responses to multi-hop queries, supporting both Chinese and multilingual RAG systems and significantly improving answer accuracy and interpretability.</p>
+        </div>
+    </div>
+    <div class="modal" id="project-modal-2">
+        <div class="modal-header">
+            <div class="title">Marketing A/B Testing</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Context</strong>: Supported to design an A/B testing blueprint by leveraging KPIs, such as Participation Rate, Average Spending, and Conversion Rate.</p>
+            <p><strong>Method</strong>:</p><ul><li>Designed a python application for decision making process and applied Chi-square test, and PSM-Hierarchical-Bayessian-DID method to validate the statistical significance.</li></ul>
+            <p><strong>Results</strong>:</p><ul><li>Successfully increased the overall promotion participation rate around 20% and conversion rate around 12%.</li></ul>
+        </div>
+    </div>
+    <div class="modal" id="project-modal-3">
+        <div class="modal-header">
+            <div class="title">Project Management Feature Migration</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Method</strong>:</p><ul><li>Designed widgets and trigger conditions using Azure Databricks.</li><li>Leveraged Microsoft Azure Data Factory for automated pipeline design.</li></ul>
+            <p><strong>Results</strong>:</p><ul><li>Planned and executed feature migrations based on business requirements and ADF architecture.</li><li>Facilitated collaboration across teams with a flexible pipeline and robust migration plan.</li></ul>
+        </div>
+    </div>
+    <div class="modal" id="project-modal-4">
+        <div class="modal-header">
+            <div class="title">Demand Forecasting</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Context</strong>: Developed an internal core driver using the Facebook Prophet algorithm API to simulate store demand, optimizing backend logic with PySpark.</p>
+            <p><strong>Method</strong>:</p><ul><li>Predicted demand by 15-minute intervals across different channels and items, minimizing labor costs while maximizing profits.</li></ul>
+            <p><strong>Results</strong>:</p><ul><li>Achieved an accuracy rate of 85%-95% for 10,000 to 20,000 stores, reducing labor costs by 5%-10% and increasing profits by 2%-5%.</li></ul>
+        </div>
+    </div>
+    <div class="modal" id="project-modal-5">
+        <div class="modal-header">
+            <div class="title">CKD Diagnosis ML Model</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Method</strong>:</p><ul><li>Performed feature selection using tree-based models and improved computing time with PCA.</li><li>Classify groups using the Gaussian Mixture algorithm, embedding new labels for accurate patient treatment.</li></ul>
+            <p><strong>Results</strong>:</p><ul><li>Achieved a classification accuracy of around 98%, reducing labor costs and optimizing diagnosis processes by 10%-15%.</li></ul>
+        </div>
+    </div>
+    <div class="modal" id="project-modal-6">
+        <div class="modal-header">
+            <div class="title">NLP Complaint Classification</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Method</strong>:</p><ul><li>Applied universal sentence encoder, UMAP dimensionality reduction, and HDBSCAN clustering for issue classification.</li></ul>
+            <p><strong>Results</strong>:</p><ul><li>Achieved a classification accuracy of around 85%.</li></ul>
+        </div>
+    </div>
+    <div class="modal" id="project-modal-7">
+        <div class="modal-header">
+            <div class="title">Cost of Sales Dashboard</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <div class="modal-body">
+            <p><strong>Results</strong>:</p><ul><li>Optimized the reporting process, reducing processing time from one month to one day.</li><li>Identified potential KPIs for finance specialists, facilitating quicker and smarter global evaluations.</li><li>Provided descriptive insight from the interactive dashboard for leaders to quickly understand PKI's performance.</li></ul>
+        </div>
+    </div>
+    
+    <div id="overlay"></div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>

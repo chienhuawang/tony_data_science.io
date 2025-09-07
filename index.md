@@ -2,7 +2,7 @@
   <tr>
     <td style="vertical-align: top; padding-right: 20px;">
       <h1 style="margin-top: 0; margin-bottom: 5px;">Chien-Hua Wang | Data Scientist</h1>
-      <p style="margin-top: 0; margin-bottom: 0;">[LinkedIn](https://www.linkedin.com/in/chien-hua-wang-052450142/) | <twang.jobs@gmail.com> | Seattle, WA</p>
+      <p style="margin-top: 0; margin-bottom: 0;">[LinkedIn]<a href="https://www.linkedin.com/in/chien-hua-wang-052450142/">Click To Open</a>  | <twang.jobs@gmail.com> | Seattle, WA</p>
     </td>
     <td style="width: 120px; vertical-align: top; text-align: right;">
       <img src="images/tony_icon.png" alt="Chien-Hua Wang" style="width: 120px; border-radius: 50%;">

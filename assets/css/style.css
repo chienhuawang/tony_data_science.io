@@ -4,81 +4,264 @@ html {
 }
 
 body {
-    margin: 0; /* 移除 body 的預設邊距，讓背景色能填滿整個寬度 */
-    font-family: sans-serif; /* 建議設定一個基礎字體 */
+    margin: 0;
+    font-family: sans-serif;
 }
 
-/* ===== HERO SECTION STYLES (NEW) ===== */
+/* ===== HERO SECTION STYLES ===== */
 .hero-section {
-    background-color: #f5f5f5; /* 簡約的淺灰色 */
-    padding-top: 20px; /* 增加頂部內邊距，讓內容不會太貼近頁面頂端 */
-    padding-bottom: 20px; /* 增加底部內邊距 */
+    background-color: #f5f5f5;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-/* Styles for the navigation buttons container */
-.nav-buttons {
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
+/* ... (您現有的 .nav-buttons 和 back-to-top 按鈕樣式保持不變) ... */
+.nav-buttons {text-align: center;margin-top: 20px;margin-bottom: 40px;display: flex;flex-wrap: wrap;justify-content: center;gap: 15px;max-width: 1000px;margin-left: auto;margin-right: auto;}
+.nav-buttons a {display: inline-block;padding: 10px 25px;background-color: #f0f0f0;color: #333;text-decoration: none;border-radius: 8px;transition: all 0.3s ease;font-weight: bold;letter-spacing: 1px;white-space: nowrap;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 12px 0 rgba(0, 0, 0, 0.08);}
+.nav-buttons a:hover {background-color: #e0e0e0;box-shadow: 0 6px 12px 0 rgba(0,0,0,0.15), 0 9px 20px 0 rgba(0,0,0,0.12);transform: translateY(-2px);}
+.nav-buttons a:active {background-color: #333;color: #f0f0f0;box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);transform: translateY(0);}
 
-/* Styles for individual navigation buttons */
-.nav-buttons a {
-    display: inline-block;
-    padding: 10px 25px;
-    background-color: #f0f0f0;
-    color: #333;
-    text-decoration: none;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    font-weight: bold;
-    letter-spacing: 1px;
-    white-space: nowrap;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1),
-                0 6px 12px 0 rgba(0, 0, 0, 0.08);
-}
-
-/* Hover (鼠標懸停) 效果 */
-.nav-buttons a:hover {
-    background-color: #e0e0e0;
-    box-shadow: 0 6px 12px 0 rgba(0,0,0,0.15),
-                0 9px 20px 0 rgba(0,0,0,0.12);
-    transform: translateY(-2px);
-}
-
-/* Active (點擊時) 效果 */
-.nav-buttons a:active {
-    background-color: #333;
-    color: #f0f0f0;
-    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
-    transform: translateY(0);
-}
+/* ===== PROJECT CARD STYLES ===== */
+.project-grid {display: grid;grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));gap: 20px;margin-top: 20px;}
+.project-card {background-color: #ffffff;border: 1px solid #e0e0e0;border-radius: 10px;padding: 20px;box-shadow: 0 4px 8px rgba(0,0,0,0.05);transition: transform 0.3s ease, box-shadow 0.3s ease;cursor: pointer;}
+.project-card:hover {transform: translateY(-5px);box-shadow: 0 8px 16px rgba(0,0,0,0.1);}
+.project-card h4 {margin-top: 0;color: #333;}
+.project-card .project-context {font-size: 0.9em;color: #666;line-height: 1.5;}
+.project-card .tech-stack {margin-top: 15px;}
+.project-card .tech-stack span {display: inline-block;background-color: #e7e7e7;color: #555;padding: 5px 10px;border-radius: 15px;font-size: 0.8em;margin-right: 5px;margin-bottom: 5px;}
 
 /* ===== BACK TO TOP BUTTON STYLES ===== */
-#back-to-top {
-    display: none;
+#back-to-top {display: none;position: fixed;bottom: 20px;right: 30px;z-index: 99;border: none;outline: none;background-color: #555;color: white;cursor: pointer;padding: 15px;border-radius: 10px;font-size: 18px;transition: opacity 0.4s, background-color 0.3s;}
+#back-to-top:hover {background-color: #333;}
+
+/* ===== MODAL STYLES (REVISED) ===== */
+.modal {
     position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    background-color: #555;
-    color: white;
-    cursor: pointer;
-    padding: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid #ccc;
     border-radius: 10px;
-    font-size: 18px;
-    transition: opacity 0.4s, background-color 0.3s;
+    z-index: 100;
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
-#back-to-top:hover {
-    background-color: #333;
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 15px 20px;
+    line-height: 1.6;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    z-index: 99; /* 確保遮罩在 Modal 下方但在其他內容之上 */
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* ===== EXPERIENCE TIMELINE STYLES (NEW) ===== */
+.timeline {
+    position: relative;
+    max-width: 750px;
+    margin: 40px auto;
+    padding: 20px 0;
+}
+
+/* The central vertical line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: #e0e0e0;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+/* Container for each timeline item */
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The dot on the timeline */
+.timeline-item .timeline-dot {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -7.5px;
+    background-color: #f0f0f0;
+    border: 3px solid #4CAF50; /* Green dot, matches your previous button color */
+    top: 25px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place items on the left */
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+/* Place items on the right */
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+/* Adjust the dot for right-sided items */
+.timeline-item:nth-child(even) .timeline-dot {
+    left: -7.5px;
+}
+
+/* The content card */
+.timeline-content {
+    padding: 20px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+    transform: scale(1.03); /* Hover effect */
+}
+
+.timeline-content h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.timeline-content .timeline-company {
+    font-weight: bold;
+    color: #555;
+}
+
+.timeline-content .timeline-date {
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    /* Move the central line to the left */
+    .timeline::after {
+        left: 20px;
+    }
+
+    /* Make all items full-width and place them on the right side of the line */
+    .timeline-item {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 15px;
+    }
+
+    .timeline-item:nth-child(odd) {
+        left: 0;
+    }
+
+    .timeline-item:nth-child(even) {
+        left: 0;
+    }
+
+    /* Move all dots to the line */
+    .timeline-item .timeline-dot {
+        left: 12.5px;
+    }
+}
+
+/* ===== SKILL CARDS STYLES (NEW) ===== */
+.skill-categories {
+    display: grid;
+    grid-template-columns: 1fr; /* 在手機上預設為單欄 */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-category-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 20px 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.skill-category-card h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #f0f0f0; /* 標題下的分隔線 */
+    padding-bottom: 10px;
+}
+
+.skill-pills {
+    display: flex;
+    flex-wrap: wrap; /* 讓技能標籤可以自動換行 */
+    gap: 10px; /* 標籤之間的間隔 */
+}
+
+.skill-pill {
+    background-color: #e7e7e7;
+    color: #555;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.skill-pill:hover {
+    background-color: #4CAF50; /* 滑鼠懸停時變為綠色 */
+    color: white;
+}
+
+/* 在較寬的螢幕上（大於 768px），讓技能卡片變為兩欄 */
+@media screen and (min-width: 768px) {
+    .skill-categories {
+        grid-template-columns: repeat(2, 1fr); /* 兩欄佈局 */
+    }
 }

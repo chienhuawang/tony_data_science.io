@@ -1,10 +1,14 @@
-<div style="float: right; margin-top: 10px; margin-left: 20px;">
-    <img src="images/tony_icon.png" alt="Chien-Hua Wang" style="width: 120px; border-radius: 50%;">
-</div>
-
-# Chien-Hua Wang | Data Scientist
-
-[LinkedIn](https://www.linkedin.com/in/chien-hua-wang-052450142/) | <twang.jobs@gmail.com> | Seattle, WA
+<table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+  <tr>
+    <td style="vertical-align: top; padding-right: 20px;">
+      # Chien-Hua Wang | Data Scientist
+      [LinkedIn](https://www.linkedin.com/in/chien-hua-wang-052450142/) | <twang.jobs@gmail.com> | Seattle, WA
+    </td>
+    <td style="width: 120px; vertical-align: top; text-align: right;">
+      <img src="images/tony_icon.png" alt="Chien-Hua Wang" style="width: 120px; border-radius: 50%;">
+    </td>
+  </tr>
+</table>
 
 ---
 

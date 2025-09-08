@@ -350,3 +350,112 @@ body {
     width: 55px;
     height: 30px;
 }
+
+/* ===== EDUCATION SECTION STYLES (Stacked Cards) ===== */
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.education-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.education-card h4 {
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.25rem;
+}
+
+.education-card .institution {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.education-card .location {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.certifications-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+.certifications-card ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.certifications-card ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* ===== BLOG POSTS SECTION STYLES (Article Link Cards) ===== */
+.blog-posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.blog-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.blog-card h4 {
+    color: #0056b3;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.blog-card .blog-date {
+    font-size: 0.85em;
+    color: #888;
+    margin-bottom: 15px;
+}
+
+.blog-card .blog-excerpt {
+    font-size: 0.95em;
+    color: #444;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.blog-card .read-more {
+    color: #28a745;
+    font-weight: bold;
+    align-self: flex-start;
+}

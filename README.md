@@ -1,2 +1,2 @@
 # tonywang.github.io
-This is my personal data science blog
+This is my digital resume and project blog.

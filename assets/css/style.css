@@ -288,37 +288,37 @@ body {
                 box-shadow 0.3s ease-in-out;
 }
 
-/* 2. 「技能資歷」關鍵字的預設光暈 (藍色) */
+/* 2. 「技能資歷」關鍵字的預設光暈 (稍微加強) */
 .interactive-text .highlight.skill {
-    background-color: rgba(0, 123, 255, 0.08); /* 非常淡的藍色背景 */
+    background-color: rgba(0, 123, 255, 0.2); /* 背景透明度從 0.08 -> 0.1 */
     color: #004085;
-    /* 預設的、較為收斂的藍色光暈 */
-    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); 
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.25); /* 陰影透明度從 0.2 -> 0.25 */
 }
 
-/* 3. 「商業洞察」關鍵字的預設光暈 (綠色) */
+/* 3. 「商業洞察」關鍵字的預設光暈 (稍微加強) */
 .interactive-text .highlight.impact {
-    background-color: rgba(40, 167, 69, 0.08); /* 非常淡的綠色背景 */
+    background-color: rgba(40, 167, 69, 0.2); /* 背景透明度從 0.08 -> 0.1 */
     color: #155724;
-    /* 預設的、較為收斂的綠色光暈 */
-    box-shadow: 0 0 8px rgba(40, 167, 69, 0.2);
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.25); /* 陰影透明度從 0.2 -> 0.25 */
 }
 
-/* 4. 滑鼠懸停時的「向外突出」效果 */
-.interactive-text .highlight:hover {
-    /* 放大 5% 並向上移動 2px 來創造立體感 */
-    transform: scale(1.05) translateY(-2px);
-}
 
-/* 5. 滑鼠懸停時，光暈變得更強烈以提供回饋 */
+/* 4. 滑鼠懸停時的「顯著突出」效果 (重點修改) */
+
+/* 技能資歷 (藍色) */
 .interactive-text .highlight.skill:hover {
-    /* 更明顯的藍色光暈 */
-    box-shadow: 0 0 12px rgba(0, 123, 255, 0.5); 
+    background-color: #007bff; /* 背景變為不透明的實心藍色 */
+    color: #ffffff;            /* 文字顏色變為白色，形成反差 */
+    /* 光暈範圍更廣、更亮 */
+    box-shadow: 0 0 16px 3px rgba(0, 123, 255, 0.5); 
 }
 
+/* 商業洞察 (綠色) */
 .interactive-text .highlight.impact:hover {
-    /* 更明顯的綠色光暈 */
-    box-shadow: 0 0 12px rgba(40, 167, 69, 0.5);
+    background-color: #28a745; /* 背景變為不透明的實心綠色 */
+    color: #ffffff;            /* 文字顏色變為白色 */
+    /* 光暈範圍更廣、更亮 */
+    box-shadow: 0 0 16px 3px rgba(40, 167, 69, 0.5);
 }
 
 /* ===== SOCIAL ICON BUTTON STYLES (REVISED RECTANGLE VERSION) ===== */

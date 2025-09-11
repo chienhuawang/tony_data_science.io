@@ -194,10 +194,14 @@ body {
 /* 針對小螢幕的響應式調整 */
 @media screen and (max-width: 768px) {
     .scroll-mouse-indicator {
-        right: 50%;
-        transform: translateX(50%);
-        /* 大幅增加 bottom 的值，直到它顯示在 nav-buttons 上方 */
-        bottom: 7px; /* 這個值需要您手動測試和微調 */
+        /* 1. 使用 top 取代 bottom */
+        top: 40px;  /* 距離 .hero-section 頂部 40px */
+        
+        /* 2. 使用 right 定位 */
+        right: 40px; /* 距離 .hero-section 右側 40px */
+        
+        /* 3. 移除或覆蓋 transform 屬性 */
+        transform: none; 
     }
 }
 

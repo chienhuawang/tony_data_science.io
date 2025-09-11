@@ -231,8 +231,13 @@ body {
     z-index: 100;
     background-color: white;
     width: 90%;
-    max-width: 600px;
+    max-width: 650px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    height: 90vh; /* 高度佔可視區域 (viewport) 的 90% */
+    max-height: 700px; /* 但最大不超過 700px */
+    /* 讓內部佈局更靈活 */
+    display: flex;
+    flex-direction: column;
 }
 
 .modal.active {
@@ -245,6 +250,8 @@ body {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #ccc;
+    /* 確保 header 不會被 body 內容擠壓 */
+    flex-shrink: 0; 
 }
 
 .modal-header .title {
@@ -264,6 +271,10 @@ body {
 .modal-body {
     padding: 15px 20px;
     line-height: 1.6;
+    /* 讓內容區塊自動填滿剩餘空間 */
+    flex-grow: 1;  
+    /* 當內容超出時，顯示垂直滾動條 */
+    overflow-y: auto;
 }
 
 #overlay {

@@ -193,14 +193,11 @@ body {
 
 /* 針對小螢幕的響應式調整 */
 @media screen and (max-width: 768px) {
-    .hero-name {
-        font-size: 2.8rem;
-    }
-    .hero-title {
-        font-size: 0.9rem;
-    }
-    .hero-section {
-        min-height: 70vh;
+    .scroll-mouse-indicator {
+        right: 50%;
+        transform: translateX(50%);
+        /* 大幅增加 bottom 的值，直到它顯示在 nav-buttons 上方 */
+        bottom: 7px; /* 這個值需要您手動測試和微調 */
     }
 }
 

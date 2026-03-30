@@ -1,0 +1,85 @@
+ChienHua Wang
+400 Boren Ave N, Seattle WA 98109 * (832)-275-3365 * chw.data.talent@gmail.com LinkedIn: https://www.linkedin.com/in/chien-hua-wang-052450142/
+Career Blog: https://www.novusagentic.ai/tony_data_science.io/
+CAREER OBJECTIVE
+Data Scientist with 6 years of experience specializing in transforming complex data into actionable insights and scalable AI solutions. My technical expertise spans data analytics, machine learning, LLM finetuning, knowledge graph systems, agentic AI, A/B testing, and ETL pipeline design. Complemented by strong business execution skills in production planning, project management, Scrum/Agile delivery, and crossfunctional collaboration, I excel at bridging technical innovation with realworld business impact. I am passionate about building intelligent systems that enhance decisionmaking, optimize operations, and drive measurable value.
+PROFESSIONAL EXPERIENCE
+COSMED | Uni-President Group - Big Data Team Manager, February 2026 – Now
+Architected Retail-Focused Agentic AI Solutions: 
+Designed and deployed an autonomous AI Agent powered by LangGraph and Gemini Pro. Engineered the agent's core reasoning engine and tool-calling capabilities to automate complex social media listening tasks for the COSMED marketing department.
+Engineered High-Value Business Use Cases via Human-Machine Collaboration: Successfully reduced time-to-insight by 70% for the marketing team by automating raw data synthesis into actionable intelligence through the following modules:
+Dynamic Consumer Profiling: Programmed the agent to autonomously digest massive Instagram interactions to extract pain points and demographic preferences. Designed a human-in-the-loop workflow where the AI surfaces synthesized consumer personas for final strategic calibration by human marketers.
+"Dark Horse" Trend Discovery: Implemented a predictive trend-spotting module. The agent autonomously monitors niche cosmetic communities and triggers actionable alerts when unexpected products exhibit sudden spikes in social engagement, accelerating time-to-market decisions.
+Competitor Market Heat Analysis: Deployed workflows for continuous tracking of competitor sentiment and campaign traction. Enabled interactive, multi-turn dialogue sessions allowing marketers to deeply interrogate competitor intelligence before finalizing strategies.
+Cloud-Native Infrastructure Automation: Developed a specialized Google SDK Agent to automate legacy infrastructure migration and GCP environment provisioning. This AI-driven automation reduced manual DevOps overhead by 85%, ensuring a scalable and robust foundation for rapid Agentic AI deployment.
+Implemented Enterprise-Grade Safeguards: 
+Developed internal Identity and Access Management (IAM) controls within the agent's tool-execution lifecycle, systematically authenticating employee permissions to guarantee secure handling of sensitive market intelligence.
+Self Employed - Founder & Agentic AI Full Stack Developer, December 2025 – Now
+Core Technical Strategy
+Hybrid Intelligence Architecture: Engineered a dual-layer framework that integrates deterministic algorithms for operational efficiency with probabilistic LLM reasoning for complex problem-solving.
+Cost-Aware Model Routing: Developed dynamic routing protocols to balance high-reasoning performance with unit economics, strategically deploying Small Language Models (SLMs) versus Frontier Models.
+Domain-Driven Agent Decomposition: Architected specialized agent clusters mapped to specific business domains, ensuring modularity, high-precision code generation, and long-term maintainability.
+Governance & Quality Assurance
+Spec-Driven Frameworks: Established rigorous "Rules of Engagement" for AI agents, enforcing standardized Tech Spec templates, automated linting, and PII (Personally Identifiable Information) protection protocols.
+Human-in-the-Loop (HITL) Oversight: Re-engineered the Tech Lead role into a Lead Architectural Reviewer, serving as the final quality gate for security audits and ensuring AI-generated code meets strict production standards.
+Operational Force Multiplier: Automated approximately 80% of boilerplate implementation and unit testing, enabling the throughput of a full-stack agile team while retaining 100% human authority over critical system logic.
+Strategic Business Impact
+R&D Optimization: Significantly reduced marginal development costs by automating repetitive engineering cycles.
+Accelerated Time-to-Market (TTM): Compressed the concept-to-production lifecycle by over 50%, enabling rapid iteration and competitive scaling.
+Risk Mitigation: Ensured "Secure by Design" principles through automated governance and rigorous human-led verification.
+Self Employed - Founder & Agentic AI Full Stack Developer - Intelligent Investment Analysis System - Agentic AI Portfolio Advisor (Agent-Based), December 2025 – Now
+Cloud Infrastructure Automation & Migration: Lead the strategic migration from a monolithic Render/MongoDB setup to a highly scalable GCP (Google Cloud Platform) ecosystem. Leveraged Google Cloud SDK to automate the provisioning of Cloud Run, Cloud SQL (PostgreSQL), Firestore, and IAM roles, achieving a production-grade, secure, and resilient infrastructure.
+Agentic Workflow & Specialized Logic: Architected complex, iterative reasoning paths using LangGraph to manage multi-step financial decision-making. Enhanced agent capabilities by implementing MCP (Model Context Protocol) servers, enabling the LLM to access specialized domain knowledge and external data sources with high precision.
+High-Performance Financial Tooling: Engineered a custom suite of Python-based tools (integrated with Pandas) for autonomous stock valuation and sector trend forecasting. Optimized the system's responsiveness by transitioning from local CSV caching to Cloud SQL and Firestore, significantly reducing I/O latency for real-time data retrieval.
+Advanced LLM Inference & Optimization: Deployed Gemini 2.0 Flash as the core reasoning engine, fine-tuning inference parameters (Temperature: 0.3) to ensure rigorous financial analysis. Successfully integrated the Gemini API into a custom chat interface, maintaining stateful conversations and mitigating hallucinations through robust prompt engineering.
+Scalable API & Session Management: Enveloped agentic logic within Flask RESTful APIs deployed on Cloud Run. Implemented secure user authentication and persistent session management, delivering a seamless, end-to-end AI investment advisory experience for high-concurrency environments.
+Data Center Power Cost Optimization Project (Deep Reinforcement Learning) - Personal Project and Training
+Modeled a complex energy ecosystem integrating data center load demands, a Battery Energy Storage System (BESS), and real-time grid electricity pricing. The objective was to address high operational costs by exploring AI-driven energy arbitrage optimization.
+Led the development of a Deep Reinforcement Learning (SAC) agent using PyTorch, CUDA, and a Gymnasium environment. The agent was trained to autonomously learn and execute optimal BESS charging/discharging decisions by analyzing real-time electricity prices and load forecasts.
+Validated through a full-year A/B simulation, the AI-driven strategy successfully reduced total annual electricity costs by 2.1% (approx. $28.2k), outperforming baseline methods and confirming the commercial viability of the solution for industrial-scale applications.
+Starbucks - Data Scientist, December 2021 – May 2025
+Marketing – Customized Personal Promotion Strategy Launch - A/B Testing
+Supported to design an A/B testing blueprint by leveraging KPls, such as Participation Rate, Average Spending, and Conversion Rate.
+Designed a python application for decision making process and applied Chi-square test, and PSM-Hierarchical-Bayessian-DID method to validate the statistical significance.
+Successfully increased the overall promotion participation rate around 20% and conversion rate around 12%
+Project Management – Feature Migration and Scheduling Planning
+Designed widgets and trigger conditions using Azure Databricks.
+Leveraged Microsoft Azure Data Factory for automated pipeline design.
+Planned and executed feature migrations based on business requirements and ADF architecture.
+Facilitated collaboration across teams with a flexible pipeline and robust migration plan.
+Store Operating Simulation - Customer Demand Forecast and Intelligent Recommendation
+Developed an internal core driver using the Facebook Prophet algorithm API to simulate store demand, optimizing backend logic with PySpark.
+Predicted demand by 15-minute intervals across different channels and items, minimizing labor costs while maximizing profits.
+Achieved an accuracy rate of 85%-95% for 10,000 to 20,000 stores, reducing labor costs by 5%-10% and increasing profits by 2%-5%.
+Amgen - Senior Associate Data Scientist, June 2020 – December 2021
+Chronic Kidney Disease – Unsupervised Machine Learning Diagnosis
+Performed feature selection using tree-based models and improved computing time with PCA.
+Classify groups using the Gaussian Mixture algorithm, embedding new labels for accurate patient treatment.
+Achieved a classification accuracy of around 98%, reducing labor costs and optimizing diagnosis processes by 10%-15%.
+Voice-to-Text NLP User Complaints – Issue Classification
+Applied universal sentence encoder, UMAP dimensionality reduction, and HDBSCAN clustering for issue classification.
+Achieved a classification accuracy of around 85%
+Amgen - Visualization Engineer, August 2019 – May 2020
+Cost of Sales – Data Analysis and Visualization
+Optimized the reporting process, reducing processing time from one month to one day.
+Identified potential KPIs for finance specialists, facilitating quicker and smarter global evaluations.
+Provided descriptive insight from the interactive dashboard for leaders to quickly understand PKI’s performance.
+EDUCATION
+TEXAS A&M UNIVERSITY – COLLEGE STATION, Texas, United States
+Master of Industrial Engineering, January 2017 – December 2018
+TATUNG UNIVERSITY, Taipei, Taiwan
+Bachelor of Electrical Engineering, September 2010 – September 2014
+TECHNICAL SKILLS
+Programming & Scripting Languages: Python, PySpark, R, SQL
+Data Engineering & ETL: Azure Databricks, ETL, SQL, Web Scraping (Transformers, SpaCy Requests), URLlib
+Cloud Service: Azure Service, Azure Delta Lake, Azure Synapse Analytics , AWS, AWS S3, AWS Glue, AWS Redshift
+Data Visualization: Power BI, Tableau, Plotly, Plotly Dash, R Shiny
+AI and Machine Learning: Supervised Learning, Unsupervised Learning, Deep Learning (Neural Networks), HDBSCAN, UMAP, A/B Testing, Reinforcement Learning, Statistical Validation, Stable Baseline3, Google Antigravity, Agentic AI
+Large Language Modeling: LLM, LLM-Fine Tuning, Knowledge Graph, GraphRAG, LangChain, LangGraph, TensorFlow/TensorFlow Hub, PyTorch 
+Project Management and CI/CD: Project Management, Project Scheduling, GitHub, GitLab, Azure Data Factory, Docker
+Web Development: HTML-xpath, CSS-xpath
+LICENSES AND CERTIFICATIONS
+Microsoft – Azure AI and ML Engineering Certificate
+Nvidia – LangGraph & LLM Fine-Tuning Training Certificate
+Data Science Certificate issued by John Hopkins University
+Google Data Analytics Certificate

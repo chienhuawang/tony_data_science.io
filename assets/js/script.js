@@ -1,9 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
+    
     // ===== INITIALIZE AOS ANIMATION LIBRARY =====
     AOS.init({
         duration: 800,
         once: true,
+        offset: 50
     });
+
+    // ===== CUSTOM CURSOR LOGIC =====
+    const cursorDot = document.querySelector('.cursor-dot');
+    const cursorOutline = document.querySelector('.cursor-outline');
+
+    if (cursorDot && cursorOutline && window.innerWidth > 1024) {
+        window.addEventListener('mousemove', function(e) {
+            const posX = e.clientX;
+            const posY = e.clientY;
+
+            cursorDot.style.left = `${posX}px`;
+            cursorDot.style.top = `${posY}px`;
+
+            cursorOutline.style.left = `${posX}px`;
+            cursorOutline.style.top = `${posY}px`;
+        });
+    }
 
     // ===== MODAL LOGIC =====
     const projectCards = document.querySelectorAll('[data-modal-target]');
@@ -35,16 +54,18 @@ document.addEventListener('DOMContentLoaded', function() {
         if (modal == null) return;
         modal.classList.add('active');
         overlay.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent scrolling background
     }
 
     function closeModal(modal) {
         if (modal == null) return;
         modal.classList.remove('active');
         overlay.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
     }
 
-    // ===== SMOOTH SCROLL FOR NAV BUTTONS =====
-    const navLinks = document.querySelectorAll('.nav-buttons a');
+    // ===== SMOOTH SCROLL FOR NAV LINKS =====
+    const navLinks = document.querySelectorAll('.nav-link');
     for (const link of navLinks) {
         link.addEventListener('click', function(event) {
             if (this.hash !== "") {
@@ -57,18 +78,36 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // ===== BACK TO TOP BUTTON LOGIC =====
-    const backToTopButton = document.getElementById("back-to-top");
-    window.onscroll = function() { scrollFunction(); };
-    function scrollFunction() {
-        if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            backToTopButton.style.display = "block";
-        } else {
-            backToTopButton.style.display = "none";
-        }
-    }
-    backToTopButton.addEventListener('click', function(event) {
-        event.preventDefault();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    // ===== SCROLLSPY LOGIC (Update Active Nav Link) =====
+    const sections = document.querySelectorAll('.section-block');
+    
+    // Create an intersection observer
+    const observerOptions = {
+        root: null,
+        rootMargin: '-20% 0px -60% 0px', // Adjust these margins to trigger earlier/later
+        threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Remove active class from all links
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+                
+                // Add active class to corresponding link
+                const id = entry.target.getAttribute('id');
+                const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+        });
+    }, observerOptions);
+
+    sections.forEach(section => {
+        observer.observe(section);
     });
+
 });

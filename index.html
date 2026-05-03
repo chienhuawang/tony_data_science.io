@@ -5,340 +5,401 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chien-Hua Wang | Data Scientist</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
 
-    <div class="hero-section">
-        <div class="hero-content-container">
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
 
-            <img src="images/tony_icon.png" alt="Chien-Hua Wang" class="hero-avatar">
+    <div class="layout-wrapper">
 
-            <h1 class="hero-name">Chien-Hua Wang</h1>
+        <!-- LEFT SIDEBAR: Sticky Profile & Navigation -->
+        <aside class="sidebar">
+            <div class="profile-container">
+                <img src="images/tony_icon.png" alt="Chien-Hua Wang" class="avatar">
+                <h1 class="name">Chien-Hua Wang</h1>
+                <h2 class="title">Agentic AI Engineer & AI Team Manager</h2>
 
-            <p class="hero-title">DATA SCIENTIST</p>
+                <p class="bio-short">
+                    Transforming complex data into actionable insights and scalable AI solutions. Bridging technical
+                    innovation with real-world business impact.
+                </p>
 
-            <div class="hero-contact-info">
-                <a href="https://www.linkedin.com/in/chien-hua-wang-052450142/" target="_blank"
-                    rel="noopener noreferrer" class="social-link" title="LinkedIn Profile">
-                    <img src="images/linkedin_logo.png" alt="LinkedIn Logo" class="social-icon-logo">
-                </a>
-                <span class="separator">|</span>
-                <a href="mailto:chw.data.talent@gmail.com" class="contact-link">chw.data.talent@gmail.com</a>
-                <span class="separator">|</span>
-                <span class="location-text">Seattle, WA</span>
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/chien-hua-wang-052450142/" target="_blank"
+                        rel="noopener noreferrer" class="social-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect x="2" y="9" width="4" height="12"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </a>
+                    <a href="mailto:chw.data.talent@gmail.com" class="social-icon" title="chw.data.talent@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </a>
+                    <span class="location-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        Seattle, WA
+                    </span>
+                </div>
             </div>
 
-        </div>
-        <div class="nav-buttons">
-            <a href="#about">ABOUT</a>
-            <a href="#projects">PROJECTS</a>
-            <a href="#skills">SKILLS</a>
-            <a href="#experience">EXPERIENCE</a>
-            <a href="#education">EDUCATION</a>
-            <a href="#blog">BLOG</a>
-        </div>
-        <a href="#about" class="scroll-mouse-indicator" aria-label="Scroll down">
-            <div class="mouse-wheel"></div>
-        </a>
+            <nav class="toc-nav">
+                <ul>
+                    <li><a href="#about" class="nav-link active"><span class="nav-indicator"></span> About Me</a></li>
+                    <li><a href="#experience" class="nav-link"><span class="nav-indicator"></span> Experience</a></li>
+                    <li><a href="#projects" class="nav-link"><span class="nav-indicator"></span> Projects</a></li>
+                    <li><a href="#skills" class="nav-link"><span class="nav-indicator"></span> Skills</a></li>
+                    <li><a href="#education" class="nav-link"><span class="nav-indicator"></span> Education & Blog</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- RIGHT CONTENT AREA -->
+        <main class="content-area">
+
+            <!-- SECTION: ABOUT (Bento Box Layout) -->
+            <section id="about" class="section-block">
+                <div class="bento-grid-about" data-aos="fade-up">
+                    <div class="bento-box bento-large">
+                        <h3>About Me</h3>
+                        <p class="interactive-text">
+                            Data Scientist with <strong>6 years of experience</strong> specializing in transforming
+                            complex data into <strong>actionable insights</strong> and <strong>scalable AI
+                                solutions</strong>. My technical expertise spans data analytics, machine learning, LLM
+                            fine-tuning, knowledge graph systems, agentic AI, and ETL pipeline design. Complemented by
+                            strong execution skills in project management and cross-functional collaboration, I excel at
+                            bridging technical innovation with <strong>real-world business impact</strong>.
+                        </p>
+                    </div>
+
+                    <div class="bento-box bento-stat">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label">Years of<br>Experience</div>
+                    </div>
+
+                    <div class="bento-box bento-focus">
+                        <h4>Core Focus</h4>
+                        <div class="focus-tags">
+                            <span>Agentic AI</span>
+                            <span>LLM Fine-Tuning</span>
+                            <span>ETL Pipelines</span>
+                            <span>Machine Learning</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SECTION: EXPERIENCE -->
+            <section id="experience" class="section-block">
+                <h3 class="section-title" data-aos="fade-right">Experience</h3>
+
+                <div class="experience-list">
+
+                    <div class="exp-card" data-aos="fade-up">
+                        <div class="exp-date">Feb 2026 - Present</div>
+                        <div class="exp-details">
+                            <h4>Big Data Team Manager</h4>
+                            <h5>COSMED | Uni-President Group</h5>
+                            <p>Leading data strategy and advanced AI solutions for retail operations.</p>
+                        </div>
+                    </div>
+
+                    <div class="exp-card" data-aos="fade-up" data-aos-delay="50">
+                        <div class="exp-date">Dec 2025 - Present</div>
+                        <div class="exp-details">
+                            <h4>Founder & Agentic AI Full Stack Developer</h4>
+                            <h5>NovusAgentic.ai</h5>
+                            <p>Architecting dual-layer Hybrid Intelligence architectures and custom agentic workflows.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="exp-date">Dec 2021 - May 2025</div>
+                        <div class="exp-details">
+                            <h4>Data Scientist</h4>
+                            <h5>Starbucks</h5>
+                            <p>Optimized supply chain and retail analytics using advanced machine learning models.</p>
+                        </div>
+                    </div>
+
+                    <div class="exp-card" data-aos="fade-up" data-aos-delay="150">
+                        <div class="exp-date">Jun 2020 - Dec 2021</div>
+                        <div class="exp-details">
+                            <h4>Senior Associate Data Scientist</h4>
+                            <h5>Amgen</h5>
+                            <p>Applied NLP and unsupervised learning to healthcare data for insight generation.</p>
+                        </div>
+                    </div>
+
+                    <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="exp-date">Aug 2019 - May 2020</div>
+                        <div class="exp-details">
+                            <h4>Visualization Engineer</h4>
+                            <h5>Amgen</h5>
+                            <p>Developed dynamic dashboards to accelerate global financial and operational reporting.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECTION: PROJECTS (Grid) -->
+            <section id="projects" class="section-block">
+                <h3 class="section-title" data-aos="fade-right">Featured Projects</h3>
+
+                <div class="project-bento-grid">
+
+                    <div class="project-bento-card bento-full highlight-card" data-aos="fade-up"
+                        data-modal-target="#project-modal-cosmed">
+                        <div class="card-inner">
+                            <span class="project-date-tag">Feb 2026 - Present</span>
+                            <h4>Retail Agentic AI</h4>
+                            <p>Autonomous AI Agent powered by LangGraph to automate social media listening tasks for
+                                marketing.</p>
+                            <div class="bento-tech"><span>LangGraph</span><span>GCP</span><span>Gemini Pro</span></div>
+                        </div>
+                        <div class="card-hover-hint">Read Case Study →</div>
+                    </div>
+
+                    <div class="project-bento-card bento-full" data-aos="fade-up" data-aos-delay="50"
+                        data-modal-target="#project-modal-investment">
+                        <div class="card-inner">
+                            <span class="project-date-tag">Dec 2025 - Present</span>
+                            <h4>Investment Analysis AI</h4>
+                            <p>Portfolio Advisor managing multi-step financial decision-making on GCP with autonomous
+                                stock valuation tools.</p>
+                            <div class="bento-tech"><span>Gemini 2.0</span><span>MCP</span><span>LangGraph</span></div>
+                        </div>
+                        <div class="card-hover-hint">Read Case Study →</div>
+                    </div>
+
+                    <div class="project-bento-card bento-full" data-aos="fade-up" data-aos-delay="100"
+                        data-modal-target="#project-modal-founder">
+                        <div class="card-inner">
+                            <span class="project-date-tag">Dec 2025 - Present</span>
+                            <h4>Hybrid Intelligence Architecture</h4>
+                            <p>Engineered a dual-layer framework that integrates deterministic algorithms with
+                                probabilistic LLM reasoning.</p>
+                            <div class="bento-tech"><span>Agentic AI</span><span>Full Stack</span><span>SLMs</span>
+                            </div>
+                        </div>
+                        <div class="card-hover-hint">Read Case Study →</div>
+                    </div>
+
+                    <div class="project-bento-card bento-half" data-aos="fade-up"
+                        data-modal-target="#project-modal-bess">
+                        <div class="card-inner">
+                            <span class="project-date-tag">2025</span>
+                            <h4>Data Center Power Optimization</h4>
+                            <p>Deep Reinforcement Learning (SAC) agent executing optimal battery energy arbitrage.</p>
+                            <div class="bento-tech"><span>DRL</span><span>PyTorch</span><span>RL</span></div>
+                        </div>
+                        <div class="card-hover-hint">Read Case Study →</div>
+                    </div>
+
+                    <div class="project-bento-card bento-half" data-aos="fade-up" data-aos-delay="50"
+                        data-modal-target="#project-modal-1">
+                        <div class="card-inner">
+                            <span class="project-date-tag">2025</span>
+                            <h4>Enterprise AI Workflow</h4>
+                            <p>LangGraph architecture for managing states and decomposing intricate tasks.</p>
+                            <div class="bento-tech"><span>LangGraph</span><span>NVIDIA</span></div>
+                        </div>
+                        <div class="card-hover-hint">Read Case Study →</div>
+                    </div>
+
+                    <div class="project-bento-card bento-full" data-aos="fade-up" data-modal-target="#project-modal-4">
+                        <div class="card-inner">
+                            <span class="project-date-tag">2021 - 2025</span>
+                            <h4>Demand Forecasting</h4>
+                            <p>Developed a demand forecast model for 10k+ stores, achieving 85%-95% accuracy and
+                                minimizing labor costs.</p>
+                            <div class="bento-tech"><span>Time Series</span><span>Prophet</span><span>PySpark</span>
+                            </div>
+                        </div>
+                        <div class="card-hover-hint">Read Case Study →</div>
+                    </div>
+
+                    <div class="project-bento-card bento-half" data-aos="fade-up" data-modal-target="#project-modal-2">
+                        <div class="card-inner">
+                            <span class="project-date-tag">2021 - 2025</span>
+                            <h4>Marketing A/B Testing</h4>
+                            <p>Designed and validated personalized strategies.</p>
+                            <div class="bento-tech"><span>Bayesian</span><span>Chi-square</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-bento-card bento-half" data-aos="fade-up" data-aos-delay="50"
+                        data-modal-target="#project-modal-3">
+                        <div class="card-inner">
+                            <span class="project-date-tag">2021 - 2025</span>
+                            <h4>ADF Feature Migration</h4>
+                            <p>Automated pipeline design and migration.</p>
+                            <div class="bento-tech"><span>Azure Data Factory</span><span>Databricks</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-bento-card bento-half" data-aos="fade-up" data-modal-target="#project-modal-5">
+                        <div class="card-inner">
+                            <span class="project-date-tag">2020 - 2021</span>
+                            <h4>CKD Diagnosis ML Model</h4>
+                            <p>Unsupervised learning model for diagnosis.</p>
+                            <div class="bento-tech"><span>PCA</span><span>GMM</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-bento-card bento-half" data-aos="fade-up" data-aos-delay="50"
+                        data-modal-target="#project-modal-6">
+                        <div class="card-inner">
+                            <span class="project-date-tag">2020 - 2021</span>
+                            <h4>NLP Complaint Classification</h4>
+                            <p>Clustering for user complaint issue classification.</p>
+                            <div class="bento-tech"><span>UMAP</span><span>HDBSCAN</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-bento-card bento-full highlight-card" data-aos="fade-up"
+                        data-modal-target="#project-modal-7">
+                        <div class="card-inner">
+                            <span class="project-date-tag">2019 - 2020</span>
+                            <h4>Cost of Sales Dashboard</h4>
+                            <p>Optimized financial reporting processes, reducing processing time from one month to one
+                                day.</p>
+                            <div class="bento-tech"><span>PowerBI</span><span>Data Visualization</span></div>
+                        </div>
+                        <div class="card-hover-hint">Read Case Study →</div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECTION: SKILLS -->
+            <section id="skills" class="section-block">
+                <h3 class="section-title" data-aos="fade-right">Technical Arsenal</h3>
+
+                <div class="skills-bento-container">
+
+                    <div class="skill-group" data-aos="fade-up">
+                        <h4>AI & ML</h4>
+                        <div class="pill-container">
+                            <span>Supervised Learning</span><span>Unsupervised Learning</span><span>Deep
+                                Learning</span><span>Agentic AI</span><span>Reinforcement Learning</span><span>HDBSCAN /
+                                UMAP</span><span>Stable Baseline3</span><span>A/B Testing</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group" data-aos="fade-up" data-aos-delay="50">
+                        <h4>LLM & GenAI</h4>
+                        <div class="pill-container">
+                            <span>LLM Fine-Tuning</span><span>Knowledge
+                                Graph</span><span>GraphRAG</span><span>LangChain</span><span>LangGraph</span><span>MCP</span><span>PyTorch</span><span>TensorFlow</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group" data-aos="fade-up" data-aos-delay="100">
+                        <h4>Data Engineering & Cloud</h4>
+                        <div class="pill-container">
+                            <span>Python</span><span>PySpark</span><span>SQL</span><span>GCP</span><span>AWS
+                                S3/Glue</span><span>Azure Databricks</span><span>Delta Lake</span><span>ETL</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group" data-aos="fade-up" data-aos-delay="150">
+                        <h4>Tools & Vis</h4>
+                        <div class="pill-container">
+                            <span>Docker</span><span>Git</span><span>Power
+                                BI</span><span>Tableau</span><span>Plotly</span><span>Full Stack</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- SECTION: EDUCATION & BLOG -->
+            <section id="education" class="section-block">
+                <h3 class="section-title" data-aos="fade-right">Education & Insights</h3>
+
+                <div class="edu-blog-grid">
+
+                    <div class="edu-column">
+                        <div class="edu-card" data-aos="fade-up">
+                            <h4>M.S. Industrial Engineering</h4>
+                            <p class="uni">Texas A&M University</p>
+                            <p class="loc">Texas, USA</p>
+                        </div>
+                        <div class="edu-card" data-aos="fade-up" data-aos-delay="50">
+                            <h4>B.S. Electrical Engineering</h4>
+                            <p class="uni">Tatung University</p>
+                            <p class="loc">Taipei, Taiwan</p>
+                        </div>
+                        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+                            <h4>Certifications</h4>
+                            <ul>
+                                <li>Microsoft Azure AI and ML Engineering</li>
+                                <li>Nvidia LangGraph & LLM Fine-Tuning</li>
+                                <li>John Hopkins Data Science</li>
+                                <li>Google Data Analytics</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="blog-column">
+                        <a href="https://www.linkedin.com/pulse/how-bayesian-modeling-proved-personalized-portfolio-decisively-wang-4awaf"
+                            target="_blank" class="insight-card" data-aos="fade-left">
+                            <div class="insight-date">Jul 2025</div>
+                            <h4>Bayesian Modeling for Personalized Portfolios</h4>
+                            <p>Dive into the power of Bayesian methods in proving the superior performance of
+                                personalized strategies...</p>
+                            <span class="read-link">Read Article ↗</span>
+                        </a>
+
+                        <a href="https://www.linkedin.com/pulse/from-research-application-achieving-21-cost-data-centers-wang-ogr5c"
+                            target="_blank" class="insight-card" data-aos="fade-left" data-aos-delay="50">
+                            <div class="insight-date">Jul 2025</div>
+                            <h4>Deep Reinforcement Learning in Data Centers</h4>
+                            <p>Explore how deep reinforcement learning can optimize data center costs, moving from
+                                research to application...</p>
+                            <span class="read-link">Read Article ↗</span>
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+
+            <footer class="site-footer">
+                <p>&copy; 2026 Chien-Hua Wang. All Rights Reserved.</p>
+            </footer>
+
+        </main>
     </div>
 
-    <div class="container" style="max-width: 800px; margin: 0 auto; padding: 20px;">
-        <hr>
-        <div data-aos="fade-up">
-            <h3 id="about">About Me</h3>
-            <p class="interactive-text">
-                Data Scientist with
-                <span class="highlight skill">6 years of experience</span> specializing in transforming complex data into
-                <span class="highlight impact">actionable insights</span> and
-                <span class="highlight impact">scalable AI solutions</span>. My technical expertise spans
-                <span class="highlight skill">data analytics</span>,
-                <span class="highlight skill">machine learning</span>,
-                <span class="highlight skill">LLM fine-tuning</span>,
-                <span class="highlight skill">knowledge graph systems</span>,
-                <span class="highlight skill">agentic AI</span>, and
-                <span class="highlight impact">ETL pipeline design</span>. Complemented by strong execution skills in project management and cross-functional collaboration, I excel at bridging technical innovation with
-                <span class="highlight impact">real-world business impact</span>.
-            </p>
-        </div>
+    <!-- ============================================== -->
+    <!-- MODALS (Hidden by default, structure preserved) -->
+    <!-- ============================================== -->
 
-        <hr>
-
-        <div data-aos="fade-up">
-            <h3 id="projects">Featured Projects</h3>
-            <div class="project-grid">
-                <div class="project-card" data-modal-target="#project-modal-cosmed">
-                    <h4>Retail-Focused Agentic AI Solutions</h4>
-                    <p class="project-context">Architected an autonomous AI Agent powered by LangGraph and Gemini Pro to automate social media listening tasks.</p>
-                    <div class="tech-stack"><span>LangGraph</span><span>Agentic AI</span><span>GCP</span></div>
-                </div>
-                <div class="project-card" data-modal-target="#project-modal-investment">
-                    <h4>Intelligent Investment Analysis System</h4>
-                    <p class="project-context">Agentic AI Portfolio Advisor managing multi-step financial decision-making and stock valuation on GCP.</p>
-                    <div class="tech-stack"><span>Gemini 2.0</span><span>MCP</span><span>LangGraph</span></div>
-                </div>
-                <div class="project-card" data-modal-target="#project-modal-bess">
-                    <h4>Data Center Power Cost Optimization</h4>
-                    <p class="project-context">Deep Reinforcement Learning (SAC) agent executing optimal battery energy arbitrage optimization.</p>
-                    <div class="tech-stack"><span>DRL</span><span>PyTorch</span><span>RL</span></div>
-                </div>
-                <div class="project-card" data-modal-target="#project-modal-founder">
-                    <h4>Founder & Agentic AI Full Stack Developer</h4>
-                    <p class="project-context">Engineered a dual-layer Hybrid Intelligence Architecture reducing development costs and accelerating time-to-market.</p>
-                    <div class="tech-stack"><span>Agentic AI</span><span>Hybrid Architecture</span><span>Full Stack</span></div>
-                </div>
-                <div class="project-card" data-modal-target="#project-modal-1">
-                    <h4>Enterprise-Grade AI Agent Workflow</h4>
-                    <p class="project-context">Architected complex AI workflows using LangGraph to manage states and
-                        autonomously decompose intricate tasks.</p>
-                    <div class="tech-stack"><span>LangGraph</span><span>NVIDIA AI</span><span>Pydantic</span></div>
-                </div>
-                <div class="project-card" data-modal-target="#project-modal-2">
-                    <h4>Marketing A/B Testing</h4>
-                    <p class="project-context">Designed and validated a personalized promotion strategy, increasing
-                        participation by 20%.</p>
-                    <div class="tech-stack"><span>A/B Testing</span><span>Bayesian Methods</span><span>Python</span>
-                    </div>
-                </div>
-                <div class="project-card" data-modal-target="#project-modal-3">
-                    <h4>ADF Feature Migration</h4>
-                    <p class="project-context">Planned and executed feature migrations using Azure Data Factory and
-                        Databricks.</p>
-                    <div class="tech-stack"><span>Azure Data Factory</span><span>ETL</span><span>Scheduling</span></div>
-                </div>
-                <div class="project-card" data-modal-target="#project-modal-4">
-                    <h4>Demand Forecasting</h4>
-                    <p class="project-context">Developed a demand forecast model for 10k+ stores, achieving 85%-95%
-                        accuracy.</p>
-                    <div class="tech-stack"><span>Time Series</span><span>Prophet</span><span>PySpark</span></div>
-                </div>
-                <div class="project-card" data-modal-target="#project-modal-5">
-                    <h4>CKD Diagnosis ML Model</h4>
-                    <p class="project-context">Built an unsupervised learning model for Chronic Kidney Disease diagnosis
-                        with 98% accuracy.</p>
-                    <div class="tech-stack"><span>Unsupervised Learning</span><span>PCA</span><span>GMM</span></div>
-                </div>
-                <div class="project-card" data-modal-target="#project-modal-6">
-                    <h4>NLP Complaint Classification</h4>
-                    <p class="project-context">Applied sentence encoders and clustering to classify user complaint
-                        issues with 85% accuracy.</p>
-                    <div class="tech-stack"><span>NLP</span><span>UMAP</span><span>HDBSCAN</span></div>
-                </div>
-                <div class="project-card" data-modal-target="#project-modal-7">
-                    <h4>Cost of Sales Dashboard</h4>
-                    <p class="project-context">Optimized financial reporting processes, reducing processing time from
-                        one month to one day.</p>
-                    <div class="tech-stack"><span>Data Visualization</span><span>Reporting</span><span>KPIs</span></div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div data-aos="fade-up">
-            <h3 id="skills">Technical Skills</h3>
-            <div class="skill-categories">
-                <div class="skill-category-card">
-                    <h4>Programming & Scripting Languages</h4>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Python</span>
-                        <span class="skill-pill">PySpark</span>
-                        <span class="skill-pill">R</span>
-                        <span class="skill-pill">SQL</span>
-                    </div>
-                </div>
-                <div class="skill-category-card">
-                    <h4>Data Engineering & ETL</h4>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Azure Databricks</span>
-                        <span class="skill-pill">ETL</span>
-                        <span class="skill-pill">SQL</span>
-                        <span class="skill-pill">Web Scraping</span>
-                        <span class="skill-pill">Transformers</span>
-                        <span class="skill-pill">SpaCy</span>
-                        <span class="skill-pill">URLlib</span>
-                    </div>
-                </div>
-                <div class="skill-category-card">
-                    <h4>Cloud Services</h4>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Azure</span>
-                        <span class="skill-pill">Delta Lake</span>
-                        <span class="skill-pill">Synapse Analytics</span>
-                        <span class="skill-pill">AWS</span>
-                        <span class="skill-pill">S3</span>
-                        <span class="skill-pill">Glue</span>
-                        <span class="skill-pill">Redshift</span>
-                        <span class="skill-pill">GCP</span>
-                    </div>
-                </div>
-                <div class="skill-category-card">
-                    <h4>AI and Machine Learning</h4>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Supervised Learning</span>
-                        <span class="skill-pill">Unsupervised Learning</span>
-                        <span class="skill-pill">Deep Learning</span>
-                        <span class="skill-pill">HDBSCAN / UMAP</span>
-                        <span class="skill-pill">A/B Testing</span>
-                        <span class="skill-pill">Reinforcement Learning</span>
-                        <span class="skill-pill">Stable Baseline3</span>
-                        <span class="skill-pill">Agentic AI</span>
-                        <span class="skill-pill">Google Antigravity</span>
-                    </div>
-                </div>
-                <div class="skill-category-card">
-                    <h4>Large Language Modeling</h4>
-                    <div class="skill-pills">
-                        <span class="skill-pill">LLM Fine-Tuning</span>
-                        <span class="skill-pill">Knowledge Graph</span>
-                        <span class="skill-pill">GraphRAG</span>
-                        <span class="skill-pill">LangChain</span>
-                        <span class="skill-pill">LangGraph</span>
-                        <span class="skill-pill">TensorFlow</span>
-                        <span class="skill-pill">PyTorch</span>
-                        <span class="skill-pill">MCP</span>
-                    </div>
-                </div>
-                <div class="skill-category-card">
-                    <h4>Project Management & CI/CD</h4>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Project Management</span>
-                        <span class="skill-pill">GitHub / GitLab</span>
-                        <span class="skill-pill">Azure Data Factory</span>
-                        <span class="skill-pill">Docker</span>
-                    </div>
-                </div>
-                <div class="skill-category-card">
-                    <h4>Data Visualization</h4>
-                    <div class="skill-pills">
-                        <span class="skill-pill">Power BI</span>
-                        <span class="skill-pill">Tableau</span>
-                        <span class="skill-pill">Plotly / Dash</span>
-                        <span class="skill-pill">R Shiny</span>
-                    </div>
-                </div>
-                <div class="skill-category-card">
-                    <h4>Web Development</h4>
-                    <div class="skill-pills">
-                        <span class="skill-pill">HTML-xpath</span>
-                        <span class="skill-pill">CSS-xpath</span>
-                        <span class="skill-pill">Full Stack</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div data-aos="fade-up">
-            <h3 id="experience">Professional Experience</h3>
-            <div class="timeline">
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Big Data Team Manager</h3>
-                        <p class="timeline-company">COSMED | Uni-President Group</p>
-                        <p class="timeline-date"><em>February 2026 - Now</em></p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Founder & Agentic AI Full Stack Developer</h3>
-                        <p class="timeline-company">NovusAgentic.ai</p>
-                        <p class="timeline-date"><em>December 2025 - Now</em></p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Data Scientist</h3>
-                        <p class="timeline-company">Starbucks</p>
-                        <p class="timeline-date"><em>December 2021 - May 2025</em></p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-left">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Senior Associate Data Scientist</h3>
-                        <p class="timeline-company">Amgen</p>
-                        <p class="timeline-date"><em>June 2020 - December 2021</em></p>
-                    </div>
-                </div>
-                <div class="timeline-item" data-aos="fade-right">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>Visualization Engineer</h3>
-                        <p class="timeline-company">Amgen</p>
-                        <p class="timeline-date"><em>August 2019 - May 2020</em></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div data-aos="fade-up">
-            <h3 id="education">Education & Certifications</h3>
-            <div class="education-container">
-
-                <div class="education-card">
-                    <h4>Master of Industrial Engineering</h4>
-                    <p class="institution">TEXAS A&M UNIVERSITY-COLLEGE STATION</p>
-                    <span class="location">Texas, United States</span>
-                </div>
-
-                <div class="education-card">
-                    <h4>Bachelor of Electrical Engineering</h4>
-                    <p class="institution">TATUNG UNIVERSITY</p>
-                    <span class="location">Taipei, Taiwan</span>
-                </div>
-
-                <div class="education-card certifications-card">
-                    <h4>Licenses & Certifications</h4>
-                    <ul>
-                        <li>Microsoft – Azure AI and ML Engineering Certificate</li>
-                        <li>Nvidia – LangGraph & LLM Fine-Tuning Training Certificate</li>
-                        <li>Data Science Certificate issued by John Hopkins University</li>
-                        <li>Google Data Analytics Certificate</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <hr>
-
-        <div data-aos="fade-up">
-            <h3 id="blog">Blog Posts</h3>
-            <div class="blog-posts-grid">
-
-                <a href="https://www.linkedin.com/pulse/how-bayesian-modeling-proved-personalized-portfolio-decisively-wang-4awaf"
-                    target="_blank" rel="noopener noreferrer" class="blog-card">
-                    <h4>How Bayesian Modeling Proved a Personalized Portfolio Decisively Outperforms a Universal
-                        Strategy</h4>
-                    <p class="blog-date">July 21, 2025</p>
-                    <p class="blog-excerpt">Dive into the power of Bayesian methods in proving the superior performance
-                        of personalized strategies in portfolio management...</p>
-                    <span class="read-more">Read More &rarr;</span>
-                </a>
-
-                <a href="https://www.linkedin.com/pulse/from-research-application-achieving-21-cost-data-centers-wang-ogr5c"
-                    target="_blank" rel="noopener noreferrer" class="blog-card">
-                    <h4>From Research to Application: Achieving a 2.1% Cost Optimization for Data Centers via Deep
-                        Reinforcement learning</h4>
-                    <p class="blog-date">July 14, 2025</p>
-                    <p class="blog-excerpt">Explore how deep reinforcement learning can optimize data center costs,
-                        moving from theoretical research to practical application...</p>
-                    <span class="read-more">Read More &rarr;</span>
-                </a>
-
-            </div>
-        </div>
-    </div>
-
-    <a href="#" id="back-to-top" title="Back to top">&uarr;</a>
+    <div id="overlay"></div>
 
     <div class="modal" id="project-modal-cosmed">
         <div class="modal-header">
@@ -348,13 +409,19 @@
         <div class="modal-body">
             <p><strong>Retail-Focused Agentic AI Solutions, February 2026 – Now</strong></p>
             <ul>
-                <li><strong>LangGraph x Gemini Pro Engine</strong>: Designed and deployed an autonomous AI Agent to automate complex social media listening tasks for marketing.</li>
-                <li><strong>Dynamic Consumer Profiling & Trend Discovery</strong>: Developed modules for parsing Instagram interactions to extract pain points and spot "dark horse" market trends via sudden spikes in social engagement.</li>
-                <li><strong>Cloud-Native Automation</strong>: Developed a specialized Google SDK Agent to automate GCP environment provisioning, reducing manual DevOps overhead by 85%.</li>
-                <li><strong>Enterprise-Grade Safeguards</strong>: Implemented Identity and Access Management (IAM) controls within the agent's tool-execution lifecycle to secure sensitive market intelligence.</li>
+                <li><strong>LangGraph x Gemini Pro Engine</strong>: Designed and deployed an autonomous AI Agent to
+                    automate complex social media listening tasks for marketing.</li>
+                <li><strong>Dynamic Consumer Profiling & Trend Discovery</strong>: Developed modules for parsing
+                    Instagram interactions to extract pain points and spot "dark horse" market trends via sudden spikes
+                    in social engagement.</li>
+                <li><strong>Cloud-Native Automation</strong>: Developed a specialized Google SDK Agent to automate GCP
+                    environment provisioning, reducing manual DevOps overhead by 85%.</li>
+                <li><strong>Enterprise-Grade Safeguards</strong>: Implemented Identity and Access Management (IAM)
+                    controls within the agent's tool-execution lifecycle to secure sensitive market intelligence.</li>
             </ul>
         </div>
     </div>
+
     <div class="modal" id="project-modal-investment">
         <div class="modal-header">
             <div class="title">Intelligent Investment Analysis System</div>
@@ -363,13 +430,19 @@
         <div class="modal-body">
             <p><strong>Agentic AI Portfolio Advisor, December 2025 – Now</strong></p>
             <ul>
-                <li><strong>Agentic Workflow & Specialized Logic</strong>: Architected iterative reasoning paths using LangGraph for multi-step financial decision-making, utilizing MCP (Model Context Protocol) servers for domain knowledge access.</li>
-                <li><strong>High-Performance Financial Tooling</strong>: Engineered Python-based autonomous stock valuation tools with GCP ecosystem (Cloud SQL, Firestore).</li>
-                <li><strong>Advanced LLM Inference</strong>: Deployed Gemini 2.0 Flash as the core reasoning engine, mitigating hallucinations through robust prompt engineering.</li>
-                <li><strong>Cloud Infrastructure Automation</strong>: Migrated setup to highly scalable GCP ecosystem, leveraging Google Cloud SDK to automate Cloud Run and Cloud SQL provisioning.</li>
+                <li><strong>Agentic Workflow & Specialized Logic</strong>: Architected iterative reasoning paths using
+                    LangGraph for multi-step financial decision-making, utilizing MCP (Model Context Protocol) servers
+                    for domain knowledge access.</li>
+                <li><strong>High-Performance Financial Tooling</strong>: Engineered Python-based autonomous stock
+                    valuation tools with GCP ecosystem (Cloud SQL, Firestore).</li>
+                <li><strong>Advanced LLM Inference</strong>: Deployed Gemini 2.0 Flash as the core reasoning engine,
+                    mitigating hallucinations through robust prompt engineering.</li>
+                <li><strong>Cloud Infrastructure Automation</strong>: Migrated setup to highly scalable GCP ecosystem,
+                    leveraging Google Cloud SDK to automate Cloud Run and Cloud SQL provisioning.</li>
             </ul>
         </div>
     </div>
+
     <div class="modal" id="project-modal-bess">
         <div class="modal-header">
             <div class="title">Data Center Power Cost Optimization</div>
@@ -378,12 +451,16 @@
         <div class="modal-body">
             <p><strong>Deep Reinforcement Learning Project</strong></p>
             <ul>
-                <li><strong>Energy Arbitrage Optimization</strong>: Modeled a complex energy ecosystem integrating data center demands, Battery Energy Storage Systems (BESS), and real-time grid electricity pricing.</li>
-                <li><strong>SAC Agent Development</strong>: Led the development of a Deep RL agent using PyTorch, CUDA, and Gymnasium to execute optimal BESS charging/discharging decisions.</li>
-                <li><strong>Validation & Impact</strong>: Validated via a full-year A/B simulation, the AI-driven strategy successfully reduced total annual electricity costs by 2.1% (approx. $28.2k).</li>
+                <li><strong>Energy Arbitrage Optimization</strong>: Modeled a complex energy ecosystem integrating data
+                    center demands, Battery Energy Storage Systems (BESS), and real-time grid electricity pricing.</li>
+                <li><strong>SAC Agent Development</strong>: Led the development of a Deep RL agent using PyTorch, CUDA,
+                    and Gymnasium to execute optimal BESS charging/discharging decisions.</li>
+                <li><strong>Validation & Impact</strong>: Validated via a full-year A/B simulation, the AI-driven
+                    strategy successfully reduced total annual electricity costs by 2.1% (approx. $28.2k).</li>
             </ul>
         </div>
     </div>
+
     <div class="modal" id="project-modal-founder">
         <div class="modal-header">
             <div class="title">Founder & Agentic AI Full Stack Developer</div>
@@ -406,49 +483,42 @@
             <p><strong>Governance & Quality Assurance</strong></p>
             <ul>
                 <li><strong>Spec-Driven Frameworks</strong>: Established rigorous "Rules of Engagement" for AI agents,
-                    enforcing standardized Tech Spec templates, automated linting, and PII (Personally Identifiable
-                    Information) protection protocols.</li>
+                    enforcing standardized Tech Spec templates, automated linting, and PII protection protocols.</li>
                 <li><strong>Human-in-the-Loop (HITL) Oversight</strong>: Re-engineered the Tech Lead role into a Lead
-                    Architectural Reviewer, serving as the final quality gate for security audits and ensuring
-                    AI-generated code meets strict production standards.</li>
+                    Architectural Reviewer, serving as the final quality gate for security audits.</li>
                 <li><strong>Operational Force Multiplier</strong>: Automated approximately 80% of boilerplate
-                    implementation and unit testing, enabling the throughput of a full-stack agile team while retaining
-                    100% human authority over critical system logic.</li>
+                    implementation and unit testing, enabling the throughput of a full-stack agile team.</li>
             </ul>
             <p><strong>Strategic Business Impact</strong></p>
             <ul>
-                <li><strong>R&D Optimization</strong>: Significantly reduced marginal development costs by automating
-                    repetitive engineering cycles.</li>
+                <li><strong>R&D Optimization</strong>: Significantly reduced marginal development costs.</li>
                 <li><strong>Accelerated Time-to-Market (TTM)</strong>: Compressed the concept-to-production lifecycle by
-                    over 50%, enabling rapid iteration and competitive scaling.</li>
-                <li><strong>Risk Mitigation</strong>: Ensured "Secure by Design" principles through automated governance
-                    and rigorous human-led verification.</li>
+                    over 50%.</li>
             </ul>
         </div>
     </div>
+
     <div class="modal" id="project-modal-1">
         <div class="modal-header">
-            <div class="title">NVIDIA – Enterprise-Grade AI Agent Workflow</div>
+            <div class="title">Enterprise-Grade AI Agent Workflow</div>
             <button data-close-button class="close-button">&times;</button>
         </div>
         <div class="modal-body">
-            <p><strong>NVIDIA – Industrial Level Training – Enterprise-Grade AI Agent Workflow – Individual
-                    Developer</strong></p>
+            <p><strong>NVIDIA – Industrial Level Training</strong></p>
             <ul>
                 <li><strong>Stateful Multi-step Reasoning</strong>: Architected complex AI workflows using LangGraph by
                     designing custom Nodes and Edges, enabling the system to manage states and autonomously decompose
                     intricate tasks into executable steps.</li>
                 <li><strong>Custom Control Flow</strong>: Implemented Conditional Edges to establish self-correction
-                    loops; developed logic to automatically trigger retry/correction nodes when LLM outputs failed
-                    validation, effectively reducing error rates by around 20%.</li>
+                    loops; effectively reducing error rates by around 20%.</li>
                 <li><strong>High-Performance Model Integration</strong>: Integrated NVIDIA ChatNVIDIA endpoints within a
-                    custom graph architecture to achieve low-latency model inference and optimized response times.</li>
+                    custom graph architecture.</li>
                 <li><strong>Structured Data Governance</strong>: Leveraged Pydantic (BaseModel) to define rigorous State
-                    Schemas for data transmission between nodes, ensuring robust data consistency and strict
-                    type-checking throughout the multi-step reasoning process.</li>
+                    Schemas for data transmission between nodes.</li>
             </ul>
         </div>
     </div>
+
     <div class="modal" id="project-modal-2">
         <div class="modal-header">
             <div class="title">Marketing A/B Testing</div>
@@ -469,6 +539,7 @@
             </ul>
         </div>
     </div>
+
     <div class="modal" id="project-modal-3">
         <div class="modal-header">
             <div class="title">Project Management Feature Migration</div>
@@ -483,10 +554,10 @@
             <p><strong>Results</strong>:</p>
             <ul>
                 <li>Planned and executed feature migrations based on business requirements and ADF architecture.</li>
-                <li>Facilitated collaboration across teams with a flexible pipeline and robust migration plan.</li>
             </ul>
         </div>
     </div>
+
     <div class="modal" id="project-modal-4">
         <div class="modal-header">
             <div class="title">Demand Forecasting</div>
@@ -507,6 +578,7 @@
             </ul>
         </div>
     </div>
+
     <div class="modal" id="project-modal-5">
         <div class="modal-header">
             <div class="title">CKD Diagnosis ML Model</div>
@@ -526,6 +598,7 @@
             </ul>
         </div>
     </div>
+
     <div class="modal" id="project-modal-6">
         <div class="modal-header">
             <div class="title">NLP Complaint Classification</div>
@@ -543,6 +616,7 @@
             </ul>
         </div>
     </div>
+
     <div class="modal" id="project-modal-7">
         <div class="modal-header">
             <div class="title">Cost of Sales Dashboard</div>
@@ -559,8 +633,6 @@
             </ul>
         </div>
     </div>
-
-    <div id="overlay"></div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="assets/js/script.js"></script>

@@ -92,6 +92,14 @@ a, button, .project-bento-card {
     box-sizing: border-box;
     background: var(--bg-secondary);
     border-right: 1px solid var(--border-color);
+    overflow-y: auto;
+    /* Hide scrollbar for cleaner look */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
 }
 
 .avatar {

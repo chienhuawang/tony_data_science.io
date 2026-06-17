@@ -5,15 +5,17 @@ CAREER OBJECTIVE
 Data Scientist with 6 years of experience specializing in transforming complex data into actionable insights and scalable AI solutions. My technical expertise spans data analytics, machine learning, LLM finetuning, knowledge graph systems, agentic AI, A/B testing, and ETL pipeline design. Complemented by strong business execution skills in production planning, project management, Scrum/Agile delivery, and crossfunctional collaboration, I excel at bridging technical innovation with realworld business impact. I am passionate about building intelligent systems that enhance decisionmaking, optimize operations, and drive measurable value.
 PROFESSIONAL EXPERIENCE
 COSMED | Uni-President Group - Big Data Team Manager, February 2026 – Now
+Enterprise AI Agent Deployment (Store Scale: 600 Stores):
+* Store - Financial Data Agent (Microsoft Collaboration): Guided the engineering and deployment of a financial querying agent using Microsoft Fabric, Copilot Studio, and Teams. Empowered district managers across 600 stores with instant, conversational access to real-time sales and product metrics.
+* HR Policy Data Agent (Google Collaboration): Directed the development of an enterprise HR query assistant using GCS, BigQuery, and Gemini Enterprise. Enabled company-wide employees across 600 stores to consult company policies and operational regulations through secure conversational interfaces.
 Architected Retail-Focused Agentic AI Solutions: 
-Designed and deployed an autonomous AI Agent powered by LangGraph and Gemini Pro. Engineered the agent's core reasoning engine and tool-calling capabilities to automate complex social media listening tasks for the COSMED marketing department.
-Engineered High-Value Business Use Cases via Human-Machine Collaboration: Successfully reduced time-to-insight by 70% for the marketing team by automating raw data synthesis into actionable intelligence through the following modules:
-Dynamic Consumer Profiling: Programmed the agent to autonomously digest massive Instagram interactions to extract pain points and demographic preferences. Designed a human-in-the-loop workflow where the AI surfaces synthesized consumer personas for final strategic calibration by human marketers.
-"Dark Horse" Trend Discovery: Implemented a predictive trend-spotting module. The agent autonomously monitors niche cosmetic communities and triggers actionable alerts when unexpected products exhibit sudden spikes in social engagement, accelerating time-to-market decisions.
-Competitor Market Heat Analysis: Deployed workflows for continuous tracking of competitor sentiment and campaign traction. Enabled interactive, multi-turn dialogue sessions allowing marketers to deeply interrogate competitor intelligence before finalizing strategies.
-Cloud-Native Infrastructure Automation: Developed a specialized Google SDK Agent to automate legacy infrastructure migration and GCP environment provisioning. This AI-driven automation reduced manual DevOps overhead by 85%, ensuring a scalable and robust foundation for rapid Agentic AI deployment.
-Implemented Enterprise-Grade Safeguards: 
-Developed internal Identity and Access Management (IAM) controls within the agent's tool-execution lifecycle, systematically authenticating employee permissions to guarantee secure handling of sensitive market intelligence.
+* Designed and deployed an autonomous AI Agent powered by LangGraph and Gemini Pro. Engineered the agent's core reasoning engine and tool-calling capabilities to automate complex social media listening tasks for the COSMED marketing department.
+* Engineered High-Value Business Use Cases via Human-Machine Collaboration: Successfully reduced time-to-insight by 70% for the marketing team by automating raw data synthesis into actionable intelligence through the following modules:
+  - Dynamic Consumer Profiling: Programmed the agent to autonomously digest massive Instagram interactions to extract pain points and demographic preferences. Designed a human-in-the-loop workflow where the AI surfaces synthesized consumer personas for final strategic calibration by human marketers.
+  - "Dark Horse" Trend Discovery: Implemented a predictive trend-spotting module. The agent autonomously monitors niche cosmetic communities and triggers actionable alerts when unexpected products exhibit sudden spikes in social engagement, accelerating time-to-market decisions.
+  - Competitor Market Heat Analysis: Deployed workflows for continuous tracking of competitor sentiment and campaign traction. Enabled interactive, multi-turn dialogue sessions allowing marketers to deeply interrogate competitor intelligence before finalizing strategies.
+* Cloud-Native Infrastructure Automation: Developed a specialized Google SDK Agent to automate legacy infrastructure migration and GCP environment provisioning. This AI-driven automation reduced manual DevOps overhead by 85%, ensuring a scalable and robust foundation for rapid Agentic AI deployment.
+* Implemented Enterprise-Grade Safeguards: Developed internal Identity and Access Management (IAM) controls within the agent's tool-execution lifecycle, systematically authenticating employee permissions to guarantee secure handling of sensitive market intelligence.
 Self Employed - Founder & Agentic AI Full Stack Developer, December 2025 – Now
 Core Technical Strategy
 Hybrid Intelligence Architecture: Engineered a dual-layer framework that integrates deterministic algorithms for operational efficiency with probabilistic LLM reasoning for complex problem-solving.
@@ -72,11 +74,11 @@ Bachelor of Electrical Engineering, September 2010 – September 2014
 TECHNICAL SKILLS
 Programming & Scripting Languages: Python, PySpark, R, SQL
 Data Engineering & ETL: Azure Databricks, ETL, SQL, Web Scraping (Transformers, SpaCy Requests), URLlib
-Cloud Service: Azure Service, Azure Delta Lake, Azure Synapse Analytics , AWS, AWS S3, AWS Glue, AWS Redshift
+Cloud Service: Microsoft Fabric, Google Cloud Storage (GCS), BigQuery, Azure Service, Azure Delta Lake, Azure Synapse Analytics , AWS, AWS S3, AWS Glue, AWS Redshift
 Data Visualization: Power BI, Tableau, Plotly, Plotly Dash, R Shiny
 AI and Machine Learning: Supervised Learning, Unsupervised Learning, Deep Learning (Neural Networks), HDBSCAN, UMAP, A/B Testing, Reinforcement Learning, Statistical Validation, Stable Baseline3, Google Antigravity, Agentic AI
-Large Language Modeling: LLM, LLM-Fine Tuning, Knowledge Graph, GraphRAG, LangChain, LangGraph, TensorFlow/TensorFlow Hub, PyTorch 
-Project Management and CI/CD: Project Management, Project Scheduling, GitHub, GitLab, Azure Data Factory, Docker
+Large Language Modeling: Gemini Enterprise, Copilot Studio, LLM, LLM-Fine Tuning, Knowledge Graph, GraphRAG, LangChain, LangGraph, TensorFlow/TensorFlow Hub, PyTorch 
+Project Management and CI/CD: Project Management, Project Scheduling, Microsoft Teams (Agent Integration), GitHub, GitLab, Azure Data Factory, Docker
 Web Development: HTML-xpath, CSS-xpath
 LICENSES AND CERTIFICATIONS
 Microsoft – Azure AI and ML Engineering Certificate

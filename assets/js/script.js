@@ -55,6 +55,24 @@ document.addEventListener('DOMContentLoaded', function() {
         modal.classList.add('active');
         overlay.classList.add('active');
         document.body.style.overflow = 'hidden'; // Prevent scrolling background
+
+        // Trigger Mermaid rendering once modal is visible (wait for transition)
+        if (typeof mermaid !== 'undefined') {
+            const unrendered = modal.querySelectorAll('.mermaid:not([data-processed="true"])');
+            if (unrendered.length > 0) {
+                setTimeout(() => {
+                    try {
+                        if (typeof mermaid.run === 'function') {
+                            mermaid.run({ nodes: unrendered });
+                        } else if (typeof mermaid.init === 'function') {
+                            mermaid.init(undefined, unrendered);
+                        }
+                    } catch (err) {
+                        console.error('Failed to render Mermaid diagrams:', err);
+                    }
+                }, 350); // Match style.css transition (300ms) plus a tiny buffer
+            }
+        }
     }
 
     function closeModal(modal) {
@@ -108,6 +126,37 @@ document.addEventListener('DOMContentLoaded', function() {
 
     sections.forEach(section => {
         observer.observe(section);
+    });
+
+    // ===== INITIALIZE MERMAID =====
+    if (typeof mermaid !== 'undefined') {
+        mermaid.initialize({
+            startOnLoad: false,
+            theme: 'neutral',
+            securityLevel: 'loose',
+            flowchart: { useMaxWidth: true, htmlLabels: true }
+        });
+    }
+
+    // ===== TAB LOGIC FOR MODALS =====
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    tabButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const modal = btn.closest('.modal');
+            const targetSelector = btn.dataset.tabTarget;
+            const targetPanel = modal.querySelector(targetSelector);
+            
+            // Deactivate all sibling buttons
+            modal.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            // Deactivate all sibling panels
+            modal.querySelectorAll('.tab-content-panel').forEach(p => p.classList.remove('active'));
+            
+            // Activate current button and panel
+            btn.classList.add('active');
+            if (targetPanel) {
+                targetPanel.classList.add('active');
+            }
+        });
     });
 
 });

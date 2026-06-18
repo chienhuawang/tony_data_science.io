@@ -124,7 +124,7 @@
                             <h5>COSMED | Uni-President Group</h5>
                             <p>Leading data strategy and advanced AI solutions. Partnered with Microsoft and Google to
                                 deploy Store Financial Agents (Fabric & Copilot Studio) and HR Policy Agents (Gemini
-                                Enterprise) across 600+ stores, alongside core LangGraph-powered retail intelligence
+                                Enterprise) across 600+ stores, alongside core LangChain-powered retail intelligence
                                 engines.</p>
                         </div>
                     </div>
@@ -184,7 +184,7 @@
                             <p>Led the design and deployment of dual-vendor enterprise agents across 600+ retail stores:
                                 a Microsoft Fabric & Copilot Studio financial agent for store managers, and a Google
                                 GCS, BigQuery & Gemini Enterprise policy agent for all employees, alongside a
-                                LangGraph-powered social intelligence listener.</p>
+                                LangChain-powered social intelligence listener.</p>
                             <div class="bento-tech">
                                 <span>LangGraph</span><span>Microsoft Fabric</span><span>Copilot
                                     Studio</span><span>Gemini Enterprise</span><span>BigQuery</span><span>Teams</span>
@@ -641,7 +641,8 @@ sequenceDiagram
                     <ul class="features-list">
                         <li><strong>Cryptographic Random Keys</strong>: Keys use a prefix
                             <code>nv_sec_live_[A-Za-z0-9_]{48}</code> generated using Python's secure
-                            <code>secrets</code> package during Firebase user creation.</li>
+                            <code>secrets</code> package during Firebase user creation.
+                        </li>
                         <li><strong>Instant Key Revocation & Rotation</strong>: An API rotation button allows users to
                             immediately override old keys on Firestore. Any active SSE stream on the older key receives
                             a terminal close packet and closes gracefully.</li>
